@@ -1,5 +1,5 @@
 ;(_=> {
-  const font_family_fa_en = '"VazirFDWOL", "Poppins"'
+  const font_family_fa_en = '"VazirWOL", "Poppins"'
   const font_family_fa_code = '"VazirWOL", "MonoLisa"'
   const colors = {
     gray: {
