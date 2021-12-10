@@ -1,0 +1,30 @@
+@import "edit"
+@import "archive"
+@import "editor-not-gutenberg"
+
+// unvisible content for screen readers.
+.screen-reader-text 
+  display: none !important
+
+
+// sidebar boxes
+// remove disabled angle to movie teh box top or bottom.
+.handle-order-higher[aria-disabled="true"] 
+  display: none !important
+
+
+
+// delete and publish buttons wrapper
+#major-publishing-actions
+  gap: .5rem
+  padding: 1rem 0 0 0 !important
+  margin-top: 1rem !important
+  background: unset !important
+  border-top: 1px dashed $gray_20 !important
+
+#delete-action
+  line-height: unset !important
+
+#delete-action,
+#publishing-action
+  width: 50%

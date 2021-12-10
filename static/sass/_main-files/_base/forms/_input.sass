@@ -1,0 +1,27 @@
+input, textarea, select
+  box-shadow: unset !important
+  outline: none !important
+  border-color: $gray_20 !important
+
+  &:hover, &:focus
+    border-color: rgba($brand, .5) !important
+
+.wp-core-ui select
+  min-height: 2.4rem !important
+  padding: 0 1rem 0 2rem
+  background-size: 14px
+
+
+input[type=checkbox], input[type=radio]
+  min-width: unset
+  width: 1.2rem
+  height: 1.2rem
+
+
+select,
+input:not([type=radio]),
+textarea
+  border-radius: $border-radius
+
+input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week]
+  min-height: 2.4rem

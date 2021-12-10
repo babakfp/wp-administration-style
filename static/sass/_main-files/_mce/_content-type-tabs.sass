@@ -1,0 +1,37 @@
+.wp-editor-tabs
+  display: flex
+
+.switch-tmce,
+.switch-html
+  width: 2rem
+  height: 2rem !important
+  padding: 0
+  background: transparent
+  color: $gray_50 !important
+  transition: 200ms
+  font-size: 0
+  line-height: 1
+  top: unset
+  float: unset
+  border: unset
+  height: unset
+  margin: unset
+
+  &:hover
+    color: $brand !important
+
+  &::before
+    font-size: .8rem
+
+.switch-tmce::before
+  +icon(text)
+  border-top-right-radius: 6px
+
+.switch-html::before
+  +icon(hastag)
+  border-top-left-radius: 6px
+
+&.html-active .switch-html,
+&.tmce-active .switch-tmce
+  color: $brand !important
+  background: transparent

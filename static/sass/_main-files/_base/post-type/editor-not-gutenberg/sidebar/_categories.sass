@@ -1,0 +1,92 @@
+#categorydiv
+  .inside
+    padding: 0 !important
+  
+  
+#category-tabs
+  margin: unset
+  display: flex
+
+  li
+    all: unset
+    display: block
+    width: 100%
+
+    a
+      padding: .5rem .25rem
+      text-align: center
+      margin: unset
+      border: unset
+      border-bottom: 4px solid transparent
+      background: $gray_5
+      color: $gray_60
+      display: block
+      &:hover, &:focus
+        background: $gray_10
+  
+    &.tabs a
+      border-color: $gray_30
+
+
+#category-all,
+#category-pop
+  border: unset
+  padding: 1rem
+
+#categorychecklist,
+#categorychecklist-pop
+  display: grid
+  gap: .5rem
+  margin: unset
+
+
+#category-adder
+  padding: 1rem
+
+#category-add-toggle
+  @include btn_clr(light_gray)
+  margin: unset
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: .5rem 1rem
+  border-radius: $border-radius
+  font-weight: normal
+  transition: 200ms ease-in-out
+  user-select: none
+  height: 1.6rem
+  &:focus
+    @include btn_outline(btn_get_clr(light_gray, bg), true)
+
+#category-add-submit
+  width: 100%
+  height: 42px
+
+.tagchecklist
+  display: flex
+  flex-wrap: wrap
+  gap: .5rem
+  margin: 1rem 0 !important
+
+  li
+    display: flex
+    align-items: center
+    gap: .25rem
+    margin: unset !important
+    background: $gray_5
+    border-radius: $border-radius
+    padding: .25rem
+    padding-left: .75rem
+    font-size: 14px
+
+  .ntdelbutton
+    position: unset !important
+    margin: unset !important
+    border-radius: $border-radius
+
+    &:hover
+      background: $red_5
+
+  .remove-tag-icon::before
+    +icon(cross-circle)
+    color: $red_40 !important

@@ -1,0 +1,121 @@
+@use "sass:list"
+	
+@mixin lightButton
+	padding: .75rem 1rem
+	background: $gray_10
+	border-radius: $border-radius
+	color: gray
+	width: 100%
+	display: block
+	text-align: center
+	&:hover
+		color: gray
+		background: $gray_20
+
+
+// Button Outlline
+@mixin btn_outline($color_unit, $use_important: false)
+	box-shadow: 0 0 0 3px rgba($color_unit, .4) print_important($use_important)
+
+
+@function btn_get_clr($clr_name, $what_to_return)
+	$text: null
+	$text_active: null
+	$bg: null
+	$bg_active: null
+
+	@if $clr_name == gray
+		$text: $gray_50
+		$text_active: $gray_60
+		$bg: $gray_10
+		$bg_active: $gray_20
+
+	@if $clr_name == light_gray
+		$text: $gray_50
+		$text_active: $gray_60
+		$bg: $gray_10
+		$bg_active: $gray_20
+
+	@if $clr_name == secondary
+		$text: $gray_20
+		$text_active: $gray_10
+		$bg: $secondary
+		$bg_active: $secondaryp
+
+	@if $clr_name == primary or $clr_name == primary
+		$text: $gray_50
+		$text_active: $gray_60
+		$bg: $gray_10
+		$bg_active: $gray_20
+
+	@if $clr_name == primary or $clr_name == green
+		$text: $gray_10
+		$text_active: $gray_5
+
+	@if $clr_name == primary
+		$bg: $brand
+		$bg_active: $brandp
+
+	@if $clr_name == green
+		$bg: $green
+		$bg_active: $greenp
+
+	@if $what_to_return == text
+		@return $text
+	@else if $what_to_return == text_active
+		@return $text_active
+	@else if $what_to_return == bg
+		@return $bg
+	@else if $what_to_return == bg_active
+		@return $bg_active
+
+
+// Button Color
+@mixin btn_clr($clr_name, $importants: [])
+	$text: btn_get_clr($clr_name, text)
+	$text_active: btn_get_clr($clr_name, text_active)
+	$bg: btn_get_clr($clr_name, bg)
+	$bg_active: btn_get_clr($clr_name, bg_active)
+
+	@if list.index($importants, all)
+		$text: $text + !important
+		$text_active: $text_active + !important
+		$bg: $bg + !important
+		$bg_active: $bg_active + !important
+
+	@else
+
+		@if list.index($importants, text)
+			$text: $text + !important
+
+		@if list.index($importants, text_active)
+			$text_active: $text_active + !important
+
+		@if list.index($importants, bg)
+			$bg: $bg + !important
+
+		@if list.index($importants, bg_active)
+			$bg_active: $bg_active + !important
+
+	color: $text
+	background-color: $bg
+
+	&:hover, &:focus
+		color: $text_active
+		background-color: $bg_active
+
+
+@mixin button($clr_name: gray)
+	padding: .75rem 1rem !important
+	border-radius: $border-radius !important
+	display: inline-flex !important
+	align-items: center !important
+	text-align: center !important
+	justify-content: center !important
+	transition: 150ms ease-in-out !important
+	user-select: none
+
+	@include btn_clr($clr_name)
+
+	&:focus
+		@include btn_outline(btn_get_clr($clr_name, bg_active), true)

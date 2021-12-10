@@ -1,0 +1,153 @@
+// .dashicons-editor-break::before  content: "\f33e" !important 
+// .dashicons-admin-generic::before content: "\f013" !important 
+// .dashicons-edit::before          content: "\f304" !important 
+// .dashicons-editor-unlink::before content: "\f1f8" !important 
+
+.mce-toolbar .mce-btn-group .mce-btn.mce-primary .mce-ico
+  color: $brand !important
+
+
+#mceu_44-body, #mceu_38-body
+  display: flex !important
+  align-items: center !important
+
+
+// (first box to insert url) angle top of the tool content
+div.mce-inline-toolbar-grp.mce-arrow-right
+  
+  &::before, &::after
+    left: auto !important
+
+  &::before
+    right: 20px !important
+
+  &::after
+    right: 21px !important
+
+
+
+// after inserting url
+#mceu_38
+  margin: unset !important
+  padding: unset !important
+
+
+
+
+// PopUp
+
+
+#wp-link-wrap,
+#wp-link-wrap *,
+#wp-link
+  outline: none !important
+
+
+
+#wp-link-wrap
+
+  height: 300px !important
+  right: 50% !important
+  left: auto !important
+  margin: unset !important
+  transform: translate(50%, -50%)
+  border-radius: $border-radius
+
+  #link-options
+    padding: 20px 0 !important 
+
+  #link-options > div:first-of-type,
+  .wp-link-text-field
+    margin-bottom: 15px
+  
+
+  input
+    border: 1px solid #dae1e7 !important
+  
+  // inputs
+  label,
+  .link-target label
+    margin: unset !important
+    width: 100%
+    max-width: 100%
+
+    span
+      padding: unset !important
+      text-align: right !important
+      white-space: nowrap
+      width: 100% !important
+      max-width: 100% !important
+      margin-bottom: 5px
+    
+    input
+      margin: unset !important
+      width: 100% !important
+      padding: 4px
+      border-radius: $border-radius
+    
+    #wp-link-url
+      text-align: left
+      direction: ltr
+    
+  
+
+  .link-target
+    padding: 0 !important
+    label
+      display: flex !important
+      align-items: center !important
+      gap: 15px !important
+      line-height: 1
+      max-width: 100%
+      input
+        width: 16px !important
+        height: 16px !important
+      
+    
+    span
+      display: none !important 
+  
+
+  #link-modal-title
+    display: flex !important
+    align-items: center !important
+    font-size: 14px
+    height: auto
+    line-height: 45px
+    border-bottom: unset
+    background: #f7f7f7
+  
+  
+  #wplink-enter-url,
+  #wplink-link-existing-content,
+  #search-panel,
+  #most-recent-results
+    display: none !important
+  
+  
+
+  // close modal
+
+  #wp-link-close
+    width: 45px
+    height: 45px
+    &::before
+      // content: "\f00d" !important
+      // font-family: "Font Awesome 5 Pro" !important
+      font-weight: 300 !important
+      font-size: 16px !important
+    
+
+
+@media screen and (max-width: 520px)
+  #wp-link-wrap
+    width: calc(100% - 15px) !important
+  
+
+
+#wp-link-cancel .button,
+#wp-link-update .button
+  min-height: unset !important
+  border: unset !important
+  padding: 6px 14px !important
+  line-height: 1.8 !important

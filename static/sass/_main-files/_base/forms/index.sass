@@ -1,0 +1,24 @@
+@import input
+@import actions
+@import checkbox
+@import radio
+
+input[type=button],
+input[type=submit],
+input[type=file],
+input[type=range],
+input[type=checkbox],
+input[type=radio],
+select
+  user-select: none
+  -webkit-user-drag: none
+
+input, select, textarea
+  border-width: 2px !important
+
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary, select
+  border-radius: $border-radius !important
+
+a.preview, input#publish, input#save-post
+  margin-bottom: unset
+  line-height: unset

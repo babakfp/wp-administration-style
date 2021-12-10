@@ -1,0 +1,127 @@
+
+.postbox
+  overflow: hidden
+  border-radius: $border-radius !important
+  border-color: $gray_20
+  box-shadow: unset !important
+
+  @import right-now
+
+  &-header
+    border-color: $gray_20
+
+    h2.hndle
+      padding: 0 1rem 0 0 !important
+      color: $gray_60
+
+    .handle-actions
+      button, .handle-order-higher, .handle-order-lower 
+        width: 36px
+        height: 36px
+
+  .order-higher-indicator::before
+    +icon(angle-small-up)
+  
+  .order-lower-indicator::before
+    +icon(angle-small-down)
+
+  .order-higher-indicator,
+  .order-lower-indicator
+    display: flex
+    align-items: center
+    justify-content: center
+    &::before
+      top: unset !important
+      width: unset !important
+      height: unset !important
+
+  .inside
+    padding: .5rem !important
+    margin: unset !important
+    overflow: hidden
+
+#dashboard-widgets .inside
+  padding: 1rem !important
+
+#dashboard_right_now .main
+  padding: unset !important
+  display: grid
+  gap: 8px
+
+  > ul > li,
+  > p
+    margin: unset !important
+
+
+#dashboard-widgets .postbox-container .empty-container
+  outline-color: $gray_20 !important
+
+
+// باکس پیشنویس سریع
+#dashboard_quick_press form
+  margin: unset
+
+.js #dashboard_quick_press .drafts
+  border-color: $gray_20
+  margin-top: 1rem
+
+  ul
+    display: grid
+    gap: 8px
+    li
+      margin: unset
+
+
+
+
+
+
+// page title
+.postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .wrap>h2:first-child
+  font-size: 20px
+  padding: 10px 0 10px 0
+  color: #32373c
+
+.metabox-holder .postbox>h3, .metabox-holder .stuffbox>h3, .metabox-holder h2.hndle, .metabox-holder h3.hndle
+  padding-top: 12px
+  padding-bottom: 12px
+
+
+.postbox .hndle, .stuffbox .hndle
+  border-bottom-color: #eee
+
+
+.postbox .handlediv
+  display: inline-flex !important
+  align-items: center !important
+  justify-content: center !important
+  line-height: 0 !important
+
+
+  .toggle-indicator::before
+    box-shadow: unset !important
+    position: unset !important
+    top: unset !important
+    margin: unset !important
+    font-size: 18px
+
+
+  // icons
+  &[aria-expanded="false"] .toggle-indicator::before
+    +icon(plus-small)
+  &[aria-expanded="true"] .toggle-indicator::before
+    +icon(minus-small)
+
+
+// in dashboard
+.metabox-holder .postbox > h3, .metabox-holder .stuffbox > h3, .metabox-holder h2.hndle, .metabox-holder h3.hndle
+  padding-top: 8px !important
+  padding-bottom: 8px !important
+  font-weight: 400
+
+
+.toggle-indicator::before,
+.order-lower-indicator::before,
+.order-higher-indicator::before
+  font-size: 18px
+

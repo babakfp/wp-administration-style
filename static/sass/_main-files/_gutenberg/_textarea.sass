@@ -1,0 +1,42 @@
+// input wrapper in gugenberg page.
+.components-form-token-field__input-container,
+// select toggler button
+.components-custom-select-control__button,
+// a dropdown places in top header controls. inside a vertical 3 dot button.
+.is-alternate .components-popover__content,
+// slideable toggle (input)
+.components-form-toggle__track
+  border-color: $gray_20 !important
+
+
+// typography -> font size
+.components-custom-select-control__menu
+  border-color: $gray_20 !important
+
+// dropdown
+.components-custom-select-control__item
+  font-size: 1rem !important
+  svg
+    width: 20px !important
+    height: 20px !important
+    margin-left: .4rem
+
+
+
+// # Text align control
+  
+// container
+.components-popover:not(.is-without-arrow)
+  margin-left: -25px
+
+// wrapper
+.components-popover[data-x-axis=center] .components-popover__content
+  left: unset !important
+  right: 50%
+  transform: translateX(50%)
+
+// angle
+.components-popover:not(.is-without-arrow)[data-y-axis=top]:after,
+.components-popover:not(.is-without-arrow)[data-y-axis=top]:before
+  margin-left: unset !important
+  margin-right: -30px

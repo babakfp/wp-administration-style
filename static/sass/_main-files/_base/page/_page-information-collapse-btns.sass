@@ -1,0 +1,35 @@
+#screen-meta-links
+  #contextual-help-link,
+  #show-settings-link
+    width: 36px !important
+    height: 32px !important
+    min-height: unset !important
+    color: $gray_40 !important
+    display: flex !important
+    align-items: center !important
+    justify-content: center !important
+    font-size: 0 !important
+    line-height: 1 !important
+    box-shadow: unset !important
+    padding: unset !important
+    border: 1px solid $gray_20 !important
+    border-radius: 0 0 $border-radius $border-radius !important
+
+    &::after
+      left: unset !important
+      padding-left: unset !important
+      font-size: 1rem !important
+      display: inline-flex !important
+      align-items: center !important
+      justify-content: center !important
+      padding-left: unset !important
+      bottom: unset !important
+
+    &:hover, &:focus
+      color: $brand !important
+
+  #contextual-help-link::after
+    +icon(life-ring)
+
+  #show-settings-link::after
+    +icon(settings)

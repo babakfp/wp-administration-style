@@ -1,0 +1,50 @@
+// all date and time fields
+input.components-datetime__time-field-day-input,
+select.components-datetime__time-field-month-select,
+input.components-datetime__time-field-year-input,
+input.components-datetime__time-field-minutes-input,
+input.components-datetime__time-field-hours-input
+	min-height: 10px !important
+	height: 32px !important
+	border-radius: 0 !important
+
+// date fields wrapper
+.components-datetime__time fieldset
+	margin-bottom: unset
+
+// minutes and hours
+.components-datetime__time-field-time
+	gap: 0 !important
+.components-datetime__time-field-hours-input
+		border-right: unset !important
+.components-datetime__time-field-minutes-input
+		border-left: unset !important
+.components-datetime__time-field-hours-input,
+.components-datetime__time-field-minutes-input
+	border-top: unset !important
+.components-datetime__time-separator
+	margin: 0 -2px !important
+	z-index: 1 !important
+	font-weight: bold !important
+	color: $gray_20 !important
+
+// AM and PM buttons
+.components-datetime__time-am-button,
+.components-datetime__time-pm-button
+	border: 1px solid $gray_20 !important
+	box-shadow: unset !important
+	padding: 0 8px !important
+	height: 32px !important
+	border-top: unset !important
+	color: $gray_60
+
+	&.is-primary
+		border-color: $brand !important
+		background: $brand !important
+.components-datetime__time-am-button
+	border-right: unset !important
+
+
+// day boxes  1 2 3 ... 30
+.components-datetime__date
+	padding: unset !important

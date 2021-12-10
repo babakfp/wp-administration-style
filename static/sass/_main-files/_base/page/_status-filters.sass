@@ -1,0 +1,54 @@
+.subsubsub
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	overflow-x: auto
+	margin-top: 0
+	margin-bottom: 1rem
+
+	li
+		font-size: 0
+		display: flex
+
+		&:last-child
+			a
+				margin-left: 0
+
+				&::after
+					content: unset
+
+	a
+		font-size: 14px
+		margin-left: 1rem
+		// margin-left: 2rem
+		display: flex
+		align-items: center
+		gap: 2px
+		padding: 0
+		position: relative
+		color: $gray_60
+
+		&:hover,
+		&:focus,
+		&.current
+			color: $brand
+
+		&.current
+			font-weight: normal
+
+		// &::after
+		// 	content: ""
+		// 	width: 1px
+		// 	height: 12px
+		// 	position: absolute
+		// 	top: 50%
+		// 	left: -1rem
+		// 	transform: translateY(-50%)
+		// 	background: $gray_30
+		// 	display: block
+		// 	pointer-events: none
+
+		.count
+			font-size: .75rem
+			color: $gray_40 !important
+			font-weight: 300

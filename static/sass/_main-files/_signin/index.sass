@@ -1,0 +1,106 @@
+@import ../../variables
+@import ../../functions
+@import ../../mixins
+
+@import ../_base/fontface
+@import ../_base/destruction
+@import ../_base/forms
+
+body
+	font-family: $font_family_all !important
+	background-color: $gray_20 !important
+	display: flex
+	color: $gray_60 !important
+	user-select: none
+
+.password-input
+	font-family: inherit !important
+
+a:focus
+	box-shadow: unset !important
+
+#login
+	padding: unset
+
+h1
+	display: none
+	a
+		background-size: 65px !important
+		background-position: center bottom !important
+
+form
+	padding: 1.5rem !important
+	border-radius: $border-radius
+	margin-top: unset !important
+	border: unset !important
+	box-shadow: unset !important
+
+.input
+	font-size: 1rem !important
+	line-height: 1 !important
+	border-width: 1px !important
+	padding: .5rem 1rem !important
+	margin: 0 0 1rem 0 !important
+	height: 40px
+	color: $gray_50 !important
+
+
+// Password field
+.dashicons-visibility::before
+	+icon(eye)
+.dashicons-hidden::before
+	+icon(eye-crossed)
+.dashicons-visibility,
+.dashicons-hidden
+	display: inline-flex !important
+	font-size: 14px !important
+	width: unset !important
+	height: unset !important
+	top: unset !important
+// toggle pwd visiblity
+.login .button.wp-hide-pw
+	display: flex !important
+	align-items: center !important
+	justify-content: center !important
+	color: $gray_50 !important
+	height: 40px
+	&:hover, &:focus
+		color: $brand !important
+	&:focus
+		box-shadow: unset !important
+
+// Remember me
+.forgetmenot
+	display: flex
+	align-items: center
+	gap: .5rem
+	margin-top: .7rem
+	input, label
+		margin: unset
+
+// Submit button
+#wp-submit
+	@include button(primary)
+	min-height: unset !important
+	line-height: 1 !important
+	padding-right: 2rem !important
+	padding-left: 2rem !important
+	margin-bottom: unset !important
+
+// go back link
+#backtoblog, #nav
+	padding: unset !important
+	a
+		border-bottom: 1px dashed $gray_40
+		padding: unset !important
+		&:hover, &:focus
+			color: $brand !important
+			border-color: $brand !important
+
+// Alert
+.message
+	box-shadow: unset !important
+	border-radius: $border-radius !important
+	border-top: 1px solid $gray_20 !important
+	border-bottom: 1px solid $gray_20 !important
+	border-left: 1px solid $gray_20 !important

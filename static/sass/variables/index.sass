@@ -1,0 +1,19 @@
+@use "sass:map"
+  
+@import colors
+@import icons
+
+$font_family_all: "VazirFDWOL", "Poppins", "dashicons", "MonoLisa"
+$font_family_fa_en: "VazirWOL", "Poppins"
+$font_family_fa_code: "VazirWOL", "MonoLisa"
+$border-radius: 6px
+
+@function imp($imp)
+  @return if($imp, '!important', '')
+
+@mixin rounded($v: $border-radius, $imp: false)
+  border-radius: $v imp($imp)
+
+@mixin icon($name)
+  font-family: $icons-font-family !important
+  content: map.get($icons, $name) !important

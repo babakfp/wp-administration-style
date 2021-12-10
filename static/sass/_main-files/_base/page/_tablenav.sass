@@ -1,0 +1,50 @@
+.tablenav
+	width: 100% !important
+	display: flex !important
+	align-items: center !important
+	gap: 1rem !important
+	margin: 1rem 0 !important
+	clear: unset !important
+	height: unset !important
+	padding: unset !important
+	vertical-align: unset !important
+	flex-wrap: wrap
+
+	.actions
+		padding: unset !important
+		display: flex !important
+		align-items: center !important
+		gap: 1rem !important
+
+	.alignleft
+		float: unset !important
+
+	.bulkactions
+		select
+			order: 2
+		input
+			order: 1
+
+	select
+		height: 2.4rem !important
+		border-radius: $border-radius
+		min-height: unset !important
+		color: $gray_60 !important
+		// padding-left: 2.5rem !important
+		background-position-x: .5rem !important
+		background-position-y: 50%
+
+	input[type=submit]
+		@include btn_clr(secondary, all)
+		border-radius: $border-radius
+		transition: 200ms ease-in-out
+		user-select: none
+		padding-right: 2rem
+		padding-left: 2rem
+		height: 2.4rem
+
+		&:focus
+			@include btn_outline($secondary, true)
+
+	*
+		margin: unset !important

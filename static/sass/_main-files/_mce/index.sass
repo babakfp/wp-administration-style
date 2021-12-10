@@ -1,0 +1,62 @@
+@import ../../variables
+@import ../../functions
+@import ../../mixins
+
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset
+	color: $gray_60
+	
+@import tools
+@import quicktags-toolbar
+@import content
+@import footer
+@import mce-media
+@import wp-editor
+
+@import mce-insert-link
+@import visual-toolbar
+
+@import title-menu
+@import text-color-control
+
+
+// parent
+#wp-post_content-wrap
+	position: relative !important
+	border: unset !important
+
+	&.html-active #post_content-html,
+	&.tmce-active #post_content-tmce
+		color: $brand !important
+
+// Media ON Mobile
+
+// html btns wrapper
+#qt_post_content_toolbar
+	padding: 10px !important
+	overflow-x: auto
+	white-space: nowrap
+
+	.button
+		line-height: 1 !important
+		min-height: unset !important
+		padding: 8px 12px !important
+		direction: ltr
+		background: #e3e9ef !important
+		color: #333 !important
+
+		&:not(:last-child)
+			margin-left: 4px !important
+
+		&:focus
+			background: #c8c8c8 !important
+
+	&::-webkit-scrollbar
+		height: 2px
+
+	&::-webkit-scrollbar-thumb
+		background: $secondary
+
+.mce-text,
+.rtl .quicktags-toolbar input,
+.rtl .wp-switch-editor
+	font-family: inherit !important

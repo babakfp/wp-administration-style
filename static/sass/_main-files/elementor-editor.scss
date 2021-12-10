@@ -1,0 +1,72 @@
+@use "../packages/sass-font-face" as *;
+*{font-style:normal !important}
+
+@include font-face((
+	font-family: "VazirFDWOL",
+  font-style: normal,
+	weight: ( Thin 100, Light 300, Regular 400, Medium 500, Bold 600, "Black" 800, ),
+  url: "../fonts/Vazir/FD-WOL/Vazir-WEIGHT-FD-WOL.SUFFIX",
+  suffix: eot woff2 woff ttf,
+));
+
+@include font-face((
+  font-family: "VazirWOL",
+  font-style: normal,
+	weight: ( Thin 100, Light 300, Regular 400, Medium 500, Bold 600, "Black" 800, ),
+  url: "../fonts/Vazir/WOL/Vazir-WEIGHT-WOL.SUFFIX",
+  suffix: eot woff2 woff ttf,
+));
+
+@include font-face((
+	font-family: "Poppins",
+  font-style: normal,
+	weight: ( Thin 100, ExtraLight 200, Light 300, Regular 400, Medium 500, Bold 600, ExtraBold 700, "Black" 800, ),
+  url: "../fonts/Poppins/Poppins-WEIGHT.SUFFIX",
+	suffix: ttf,
+));
+
+@include font-face((
+	font-family: MonoLisa,
+  font-style: normal,
+	weight: ( Thin 100, ExtraLight 200, Light 300, Regular 400, Medium 500, Bold 600, "Black" 800, ),
+  url: "../fonts/MonoLisa/MonoLisa-WEIGHT.SUFFIX",
+	suffix: ttf,
+));
+
+* {
+	font-style: normal !important;
+}
+
+body,
+#elementor-finder__search__input,
+#elementor-template-library-filter-text,
+#elementor-try-safe-mode .elementor-safe-mode-button,
+.elementor-add-section-drag-title,
+.elementor-button,
+.elementor-control-tag-area,
+.elementor-input,
+.elementor-panel,
+.elementor-safe-mode-toast .elementor-toast-content,
+.elementor-safe-mode-toast header h2,
+.elementor-templates-modal .dialog-widget-content,
+.tipsy-inner,
+.wp-picker-clear.button,
+button.dialog-button.dialog-cancel.dialog-confirm-cancel,
+button.dialog-button.dialog-ok.dialog-confirm-ok,
+select,
+.elementor-loading-title {
+	font-family: "VazirFDWOL", "Poppins" !important;
+}
+
+input,
+textarea,
+input#elementor-panel-elements-search-input,
+input#elementor-template-library-save-template-name {
+	font-family: "VazirWOL", "Poppins" !important;
+}
+
+// Editor loading page
+.elementor-loading-title {
+	letter-spacing: unset !important;
+	text-indent: unset !important;
+}

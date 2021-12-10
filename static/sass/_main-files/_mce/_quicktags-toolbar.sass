@@ -1,0 +1,23 @@
+#qt_content_dfw
+	display: flex !important
+	align-items: center
+	justify-content: center
+	height: 26px
+	width: 26px
+	border-radius: $border-radius
+	border: 1px solid $gray_30
+	background: white
+	font-size: 14px
+	box-shadow: unset !important
+	&::before
+		+icon(expand)
+	&.active::before
+		+icon(compress)
+	
+// .mce-wp-dfw
+// 	font-size: 14px
+// 	.mce-ico::before
+// 		+icon(expand)
+// 	&.mce-active .mce-ico::before
+// 		+icon(compress)
+	

@@ -1,0 +1,37 @@
+.components-font-size-picker
+  &__controls
+    display: grid
+    gap: 1rem
+    margin: unset
+    > div
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 1rem
+      margin: unset
+      flex-direction: unset
+
+      label, input
+        margin: unset
+
+  .components-custom-select-control
+    &__menu
+      border-radius: $border-radius
+      box-shadow: 0 0 20px #f1e6e6
+    &__item
+      margin: unset
+      cursor: pointer
+      padding: .6rem 2rem .6rem 1rem
+      &:hover
+        background: #dae1e7
+      svg
+        margin-left: .5rem
+
+
+
+.components-color-palette__clear
+  @include lightButton
+  margin-top: 1rem
+  height: unset
+  font-size: 14px

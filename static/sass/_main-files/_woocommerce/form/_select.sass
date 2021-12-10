@@ -1,0 +1,31 @@
+.select2-selection
+	height: 2.4rem !important
+	border-radius: $border-radius !important
+	display: flex !important
+	border-color: $gray_20 !important
+	align-items: center !important
+	position: relative !important
+	&:hover, &:focus
+		border-color: rgba($brand, .5) !important
+
+	&__rendered
+		height: 100% !important
+		line-height: 2.4rem !important
+		padding-left: 1.35rem !important
+
+	&__arrow
+		width: 16px !important
+		height: 16px !important
+		background-size: 14px !important
+		background-position: 2px !important
+		top: 50% !important
+		left: 3px !important
+		transform: translateY(-50%)
+
+// select active
+.select2-container.select2-container--focus .select2-selection--single, // field
+.select2-container.select2-container--open .select2-selection--single, // field
+.select2-dropdown--below, // dropmenu
+.select2-dropdown // dropmenu
+	box-shadow: unset !important
+	border-color: rgba($brand, .8) !important

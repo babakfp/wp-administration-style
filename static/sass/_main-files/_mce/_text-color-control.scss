@@ -1,0 +1,40 @@
+// // handler
+// .mce-colorbutton {
+//   position: relative;
+//   button {
+//     &:first-child {
+//       padding-left: 20px !important;
+//     }
+//     &:last-child {
+//       position: absolute !important;
+//       left: 0 !important;
+//       width: 100% !important;
+//       height: 100% !important;
+//       text-align: left !important;
+//     }
+//   }
+// }
+
+
+// // menu
+
+
+// table.mce-grid.mce-grid-border.mce-colorbutton-grid {
+//   table {
+//     display: grid !important;
+//     gap: 5px !important;
+//   }
+//   tr {
+//     display: grid !important;
+//     grid-template-columns: 1fr 1fr 1fr !important;
+//     gap: 5px !important;
+//   }
+//   [role="option"] {
+//     border-radius: 4px !important;
+//     border: unset !important;
+//   }
+// }
+
+// .mce-colorbutton {
+//   display: none !important;
+// }

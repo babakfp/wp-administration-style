@@ -1,0 +1,67 @@
+#edit-slug-box
+	height: 30px
+	padding: unset
+	display: flex
+	justify-content: flex-end
+	line-height: 1
+	min-height: unset
+	margin-top: unset
+
+	button
+		padding: 0 10px 4px !important
+
+	.cancel
+		margin: unset !important
+
+	// Text with "Slug" content
+	> strong:first-of-type
+		display: none
+
+
+#sample-permalink
+	width: 100%
+	font-size: 12px
+	direction: ltr
+	display: flex
+	align-items: center
+	white-space: nowrap
+	> a
+		color: $gray_50 !important
+		white-space: normal
+		&:hover, &:hover *,
+		&:focus, &:focus *
+			color: $link !important
+
+#editable-post-name
+	width: 100%
+	font-weight: 500 !important
+	color: $link !important
+	input
+		color: $link !important
+		font-size: 12px
+		font-weight: 500 !important
+		height: 24px !important
+		width: 100%
+		background: unset
+		border: unset
+		line-height: unset
+		min-height: unset
+		border-bottom: 1px dashed rgba($brand, .6) !important
+		border-radius: unset !important
+		padding-right: 4px
+		padding-left: 4px
+
+
+#edit-slug-buttons
+	margin-right: 8px
+	display: flex
+	button
+		background: $gray_20 !important
+		border-radius: unset !important
+		min-height: unset
+		line-height: 1
+		font-size: 12px
+		background: unset
+		color: $gray_50 !important
+		&:hover, &:focus
+			color: $brand !important

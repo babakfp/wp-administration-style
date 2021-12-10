@@ -1,0 +1,23 @@
+table
+	border-radius: $border-radius
+	overflow: hidden
+
+table tbody
+	// comment content
+	.comment
+		> p
+			font-size: 14px
+			color: $gray_50
+	// comment author name
+	.author
+		color: $gray_50
+		// email and other links
+		a
+			font-size: 12px
+	// comment date
+	.submitted-on a
+		font-size: 12px
+		border-bottom: 1px dashed $link
+		&:hover, &:focus
+			color: $link_d
+			border-bottom-color: $link_d

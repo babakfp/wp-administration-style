@@ -1,0 +1,65 @@
+/*
+
+
+
+
+.wp-menu-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    padding: unset !important;
+  }
+}
+
+
+
+
+// changing administation menu sidebar menus
+
+#adminmenu {
+
+  > ul > li {
+    display: grid !important;
+    grid-template-columns: 40px 1fr !important;
+    align-items: center !important;
+  }
+
+
+  div.wp-menu-image:before {
+    font-size: 18px !important;
+  }
+
+  .dashicons {
+    &-dashboard { @include icon("\f62a") }
+    &-admin-media { @include icon("\e91a") }
+    &-admin-page { @include icon("\f15b") }
+    &-admin-comments { @include icon("\f4b6") }
+    &-admin-post { @include icon("\f08d") }
+    &-admin-appearance { @include icon("\f618") }
+    &-admin-plugins { @include icon("\f1e6") }
+    &-admin-users { @include icon("\e98d") }
+    &-admin-tools { @include icon("\f7d9") }
+    &-admin-settings { @include icon("\e97a") }
+  }
+
+  .wp-menu-arrow {
+    display: none !important;
+  }
+
+  .collapse-button-icon {
+    @include icon("\f324", after)
+  }
+}
+
+body.wp-admin #adminmenu #menu-posts-product .menu-icon-post div.wp-menu-image,
+body.wp-admin #adminmenu #menu-posts-product .menu-icon-product div.wp-menu-image {
+  @include icon("\e963")
+}
+body.wp-admin #adminmenu #toplevel_page_woocommerce .menu-icon-generic div.wp-menu-image {
+  @include icon("\f54e")
+}
+
+
+*/

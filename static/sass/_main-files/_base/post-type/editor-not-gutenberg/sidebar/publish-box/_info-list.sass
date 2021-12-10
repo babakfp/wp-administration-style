@@ -1,0 +1,45 @@
+.misc-pub-section::before,
+.misc-pub-section #timestamp::before,
+#post-body .misc-pub-comment-status:before, #post-body .misc-pub-post-status:before
+  all: unset !important
+
+#misc-publishing-actions
+  margin-top: .5rem !important
+  display: grid
+  gap: 8px
+  > div
+    padding: unset !important
+
+  #post-status-select
+    gap: 0.5rem
+    margin-top: .25rem !important
+
+  #post_status
+    border-radius: $border-radius
+    margin: unset
+
+  .save-post-status
+    background: $gray_20
+    color: $gray_60
+    border-radius: $border-radius
+    transition: 200ms ease-in-out !important
+    user-select: none
+    align-items: center
+    display: inline-flex
+    padding-right: 1rem
+    padding-left: 1rem
+
+    &:hover,
+    &:focus
+      background: $gray_30
+      color: $gray_70
+
+    &:focus
+      @include btn_outline($gray_20, true)
+
+  .cancel-post-status
+    align-items: center
+    display: inline-flex
+
+.misc-pub-section a.hide-if-no-js:first-of-type
+  font-size: 13px

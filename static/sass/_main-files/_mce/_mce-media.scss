@@ -1,0 +1,60 @@
+// // make it fullscreen
+// .media-modal {
+//   right: unset !important;
+//   left: unset !important;
+//   top: unset !important;
+//   bottom: unset !important;
+
+//   * {
+//     outline: none !important;
+//   }
+// }
+
+
+// // font
+// .rtl .media-frame,
+// .rtl .media-frame .search,
+// .rtl .media-frame input[type=email],
+// .rtl .media-frame input[type=number],
+// .rtl .media-frame input[type=password],
+// .rtl .media-frame input[type=search],
+// .rtl .media-frame input[type=tel],
+// .rtl .media-frame input[type=text],
+// .rtl .media-frame input[type=url],
+// .rtl .media-frame select,
+// .rtl .media-frame textarea,
+// .rtl .media-modal {
+//   font-family: inherit !important;
+// }
+
+// // input borders
+// .media-frame input[type=color],
+// .media-frame input[type=date],
+// .media-frame input[type=datetime-local],
+// .media-frame input[type=datetime],
+// .media-frame input[type=email],
+// .media-frame input[type=month],
+// .media-frame input[type=number],
+// .media-frame input[type=password],
+// .media-frame input[type=search],
+// .media-frame input[type=tel],
+// .media-frame input[type=text],
+// .media-frame input[type=time],
+// .media-frame input[type=url],
+// .media-frame input[type=week],
+// .media-frame select,
+// .media-frame textarea {
+//   border-color: $gray_20 !important;
+//   outline: none !important;
+
+//   &:focus {
+//     outline: none !important;
+//   }
+// }
+
+
+// // footer
+// .media-toolbar-primary>.media-button,
+// .media-toolbar-primary>.media-button-group {
+//   float: left !important;
+// }

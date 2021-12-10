@@ -1,0 +1,17 @@
+.wp-core-ui .button-primary
+	@include btn_clr(primary)
+
+.button, .action, select
+	box-shadow: unset !important
+
+[type=button],
+a.btn,
+a.button,
+button
+	user-select: none !important
+  
+.wp-core-ui .button:not(.button-primary),
+.wp-core-ui .button-secondary
+	@include btn_clr(light_gray)
+	&:focus
+		@include btn_outline(btn_get_clr(light_gray, bg))

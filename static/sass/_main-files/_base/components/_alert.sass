@@ -1,0 +1,19 @@
+.notice
+	overflow: hidden
+	border-radius: $border-radius
+	border-color: $gray_20 !important
+	user-select: none
+
+	&.updated
+		border-right-color: $green !important
+
+	&-dismiss
+		&::before
+			color: $gray_40
+
+		&:hover::before,
+		&:focus::before
+			color: $red_40 !important
+
+.update-message.notice-error p:before
+	color: $red_40

@@ -1,0 +1,44 @@
+.components-datetime__time
+  padding: unset
+
+  &-wrapper // year|month|day fields wrapper
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr
+    > div
+      width: 100%
+    input, select
+      width: 100%
+      height: 2.4rem
+      border-radius: unset
+    input
+      margin: unset !important
+      padding: unset !important
+    select
+      margin: unset
+      min-height: unset !important
+      max-width: unset !important
+      background-size: 12px 12px
+      padding: 0 1rem 0 2rem !important
+      border-right: unset
+      border-left: unset
+
+  &-field-time
+    display: flex
+    align-items: center
+    gap: .3rem
+    grid-column: 1/3
+    span
+      padding: unset
+
+  &-field-am-pm
+    display: flex
+    button
+      height: 100%
+      border-radius: unset
+
+  &zone
+    height: 2.4rem
+    display: flex
+    align-items: center
+    margin: unset
+    justify-content: center

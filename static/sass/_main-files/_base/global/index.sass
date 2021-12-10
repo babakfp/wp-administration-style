@@ -1,0 +1,33 @@
+@import scrollbar
+@import selection
+
+
+*
+  box-shadow: unset
+  text-decoration: none !important
+  font-style: normal !important
+
+*:not(#dashboard-widgets .postbox-container .empty-container)
+  outline: none !important
+
+
+*:focus,
+.wp-person a:focus .gravatar,
+a:focus,
+a:focus .media-icon img
+  outline: none !important
+  box-shadow: unset !important
+
+
+// remove wp admin footer
+#wpfooter
+  display: none !important
+
+a, a:active, a:hover, a:focus
+  color: $link
+
+body,
+body *:not(i, [class*=-icon], [class*=dashicons]),
+body:not(*)::before,
+body:not(*)::after
+  font-family: $font_family_all !important

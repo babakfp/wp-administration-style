@@ -1,0 +1,118 @@
+@mixin hide
+  opacity: 0
+  visibility: hidden
+  pointer-events: none
+
+@mixin show
+  opacity: 1
+  visibility: visible
+  pointer-events: auto
+
+
+#the-comment-list .response-links
+  display: flex
+  gap: .25rem
+  align-items: center
+
+// approved comments count
+.comment-count-approved
+  all: unset !important
+
+// edit post button
+.comments-edit-item-link,
+// show post button
+.comments-view-item-link,
+// approved comments count
+.comment-count-approved
+  position: relative !important
+  font-size: 0 !important
+  display: inline-flex !important
+  align-items: center !important
+  justify-content: center !important
+  color: $gray_50 !important
+  background: $gray_10 !important
+  width: 2rem !important
+  line-height: 0 !important
+  height: 2rem !important
+  border-radius: $border-radius !important
+
+  &:hover, &:focus
+    background: $gray_30 !important
+
+    &::before
+      color: $gray_60
+
+    &::after
+      @include show
+
+  &::before
+    color: $gray_50
+    font-size: 14px !important
+
+  &::after
+    @include hide
+    content: ""
+    padding: .5rem 1rem
+    background: $gray_10
+    display: inline-block
+    position: absolute !important
+    bottom: calc(100% + .5rem)
+    font-size: 0.9rem !important
+    white-space: nowrap
+    right: 0
+    font-weight: normal
+    line-height: 1.4rem
+    border-radius: $border-radius
+    transition: 200ms ease-in
+    border: 1px solid $gray_20
+    box-shadow: 0 0 8px $gray_20
+
+// edit post button
+.comments-edit-item-link
+  &::before
+    +icon(edit)
+  &::after
+    content: 'ویرایش'
+
+
+// show post button
+.comments-view-item-link
+  &::before
+    +icon(eye)
+  &::after
+    content: 'نمایش'
+
+
+// approved comments count
+.comment-count-approved
+  font-size: .9rem !important
+  &::after
+    content: unset !important
+    // content: 'تایید شده'
+
+
+// comments count wrapper
+.post-com-count-approved
+  margin-top: unset !important
+  &::after
+    display: inline-block !important
+    margin-right: unset !important
+    width: unset !important
+    height: unset !important
+    border: unset !important
+
+
+// pending comments to approve bubble
+.post-com-count-pending
+  right: -.5rem !important
+  border-radius: 100% !important
+  background: #ef4444 !important
+  width: .5rem !important
+  height: .5rem !important
+  line-height: 1 !important
+  padding: .23rem .25rem .27rem !important
+  min-width: unset !important
+  border: unset !important
+
+.response-links a.comments-edit-item-link
+  font-weight: normal

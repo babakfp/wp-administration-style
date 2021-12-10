@@ -1,0 +1,34 @@
+#wp-admin-bar-my-account
+  > .ab-item
+    font-size: 0
+    overflow: hidden
+    display: flex !important
+    align-items: center
+    gap: 6px
+    line-height: 0
+    .avatar
+      margin: unset !important
+      border-radius: $border-radius
+    .display-name
+      font-size: 12px
+      line-height: 0
+      @media screen and (max-width: 782px)
+        margin-left: 90px
+        margin-top: 10px
+  > .ab-sub-wrapper
+    *
+      line-height: 1
+
+#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions
+  @media screen and (max-width: 782px)
+    padding: 12px 8px 16px
+    
+  > li .ab-item
+    padding: 0 10px !important
+
+
+#wpadminbar #wp-admin-bar-user-info
+  margin-bottom: 0 !important
+  padding-bottom: 3px !important
+  .avatar
+    border-radius: $border-radius

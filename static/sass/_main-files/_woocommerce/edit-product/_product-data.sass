@@ -1,0 +1,38 @@
+// // postbox header
+// .hndle
+// 	&:not(.type_box *)
+// 		font-size: 0
+
+// 	label:first-child
+// 		border: unset !important
+// 		padding: unset !important
+
+// .type_box
+// 	*
+// 		margin: unset !important
+// 	label
+// 		margin-left: 1rem !important
+
+
+#woocommerce-product-data.postbox
+	.inside
+		padding: unset !important
+
+
+// Tabs
+.product_data_tabs
+	padding: unset !important
+	> li
+		> a
+			background: $gray_10 !important
+			color: $gray_60
+			border-right: 4px solid transparent
+			display: flex !important
+			align-items: center
+			&::before
+				color: $gray_40
+			&:hover, &:focus
+				background: $gray_20 !important
+		&.active > a
+			border-color: $brand
+

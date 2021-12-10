@@ -1,0 +1,24 @@
+&#dashboard_right_now
+  .inside .main ul li a
+    display: flex
+    align-items: center
+    gap: .5rem
+    padding: .5rem
+    color: $gray_60
+    &:hover
+      color: $brand
+      &::before
+        color: $brand
+    &::before
+      padding: .25rem
+      background: $gray_5
+      border-radius: $border-radius
+      font-size: 16px
+      color: $gray_40
+  
+  .post-count a::before
+    +icon(thumbtack)
+  .page-count a::before
+    +icon(file)
+  .comment-count a::before
+    +icon(comment)

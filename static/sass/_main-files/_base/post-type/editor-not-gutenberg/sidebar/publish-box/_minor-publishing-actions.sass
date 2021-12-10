@@ -1,0 +1,117 @@
+#minor-publishing-actions
+  padding: unset !important
+
+#minor-publishing-actions
+  display: flex
+  align-items: center
+  gap: .5rem
+  flex-wrap: wrap
+
+  .clear
+    display: none !important
+
+#save-action
+  position: relative
+  margin-right: -.5rem
+
+  .spinner
+    margin: unset
+    float: unset
+    position: absolute
+    top: 50%
+    right: 50%
+    transform: translate(50%, -50%)
+
+#save-post,
+#post-preview
+  @include button(gray)
+
+#save-post,
+#post-preview,
+#publish
+  min-height: unset !important
+  line-height: 1 !important
+
+#save-post,
+#post-preview,
+a.submitdelete.deletion,
+#publish
+  padding: .5rem 1rem
+  border-radius: $border-radius
+  transition: 200ms ease-in-out !important
+  user-select: none
+
+#save-post
+  margin-right: .5rem
+
+// delete button
+a.submitdelete.deletion
+  background: transparent
+  color: $red_40
+  display: inline-block
+
+  &:hover,
+  &:focus
+    background: $red_5
+    color: $red_40
+
+  &:focus
+    @include btn_outline($red_10, true)
+
+
+#publish
+  padding-right: 2rem
+  padding-left: 2rem
+  background: $brand
+  color: white
+  margin-bottom: 0 !important
+
+  &.disabled
+    background: $gray_10 !important
+    color: $gray_30 !important
+    cursor: not-allowed
+
+  &:hover,
+  &:focus
+    background: $brandp
+      
+  &:focus
+    @include btn_outline($brand, true)
+
+
+// publish button wrapper
+#publishing-action
+  position: relative
+
+  .spinner
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    margin: unset
+    opacity: .9
+
+
+a.submitdelete.deletion
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+#post-preview
+  height: 2.5rem
+  line-height: 1.8 !important
+
+
+#duplicate-action
+  margin-bottom: .5rem
+  a
+    @include button(gray)
+
+
+a.submitdelete.deletion,
+#publish,
+#duplicate-action a
+  width: calc(100% - .25rem) !important
+  height: 42px !important
+  padding: 0 !important

@@ -1,0 +1,30 @@
+body:not(.plugins-php) .row-actions
+	*
+		padding: unset
+	
+	display: flex !important
+	align-items: center
+	grid-template-columns: unset !important
+	color: transparent !important
+
+	> span
+		margin-left: 2rem
+		font-size: 0
+		position: relative
+		a, button
+			font-size: .8rem
+		&::after
+			content: ""
+			width: 1px
+			height: 12px
+			position: absolute
+			top: 50%
+			left: -1rem
+			transform: translateY(-50%)
+			background: $gray_20
+			display: block
+			pointer-events: none
+		&:last-child
+			margin-left: unset
+			&::after
+				content: unset

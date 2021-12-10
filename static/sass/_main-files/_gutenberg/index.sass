@@ -1,0 +1,47 @@
+@import ../../variables
+@import ../../functions
+@import ../../mixins
+	
+$default-border-color: #ddd
+$default-link-color: #5b5b78
+
+@import header
+@import perma-link
+@import textarea
+@import sidebar
+@import forms
+@import title
+@import elementor
+@import poblish-date-picker
+
+body.rtl.block-editor-page
+	@import permalink-accordion
+	@import categories-accordion
+	@import accordions
+	@import featured-image-accordion
+	@import post-status-accordion
+	@import post-publish-date-accordion
+	@import date-picker
+	@import font-size-picker
+
+@import classic-toolbar
+
+$default-border-color: #ddd
+$default-link-color: #5b5b78
+
+body.rtl.block-editor-page
+
+	svg.components-checkbox-control__checked
+		display: none !important
+
+	// checkbox label
+	.components-checkbox-control__label,
+	.components-panel__row > span,
+	.components-base-control__label,
+	.components-form-token-field__label,
+	input, select
+		color: #545454 !important
+
+.block-editor-block-list__insertion-point
+	position: relative
+	margin-bottom: -13px

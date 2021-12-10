@@ -1,0 +1,82 @@
+@import title
+@import title-action-button
+@import content
+@import status-filters
+@import tablenav
+
+@import admin-topbar-and-sidebar
+@import adminmenuwrap
+@import search
+@import top-menu-bar-user-box
+@import page-information-collapse-btns
+
+
+#wp-admin-bar-root-default
+	.ab-item
+		display: flex !important
+		align-items: center !important
+		gap: .5rem !important
+		&::before
+			padding: unset !important
+			margin: unset !important
+			font-size: 16px !important
+			top: unset !important
+	.ab-icon
+		display: flex !important
+		align-items: center !important
+		justify-content: center !important
+		float: unset !important
+		padding: 0 !important
+		margin: 0 !important
+		background-image: unset !important
+		&::before
+			top: unset !important
+			font-size: 16px !important
+
+
+#wp-admin-bar-new-content .ab-icon::before
+	+icon(add)
+
+#wp-admin-bar-updates .ab-icon::before
+	+icon(refresh)
+
+#wp-admin-bar-comments .ab-icon::before
+	+icon(comment)
+
+#wp-admin-bar-site-name > .ab-item::before
+	+icon(link)
+
+#wpadminbar #wp-admin-bar-wp-logo > .ab-item
+	padding: unset !important
+
+@media only screen and (min-width: 782px)
+	#wp-admin-bar-wp-logo > .ab-item
+		width: 36px !important
+		display: flex !important
+		justify-content: center !important
+
+
+@media only screen and (min-width: 782px)
+	#wpadminbar .quicklinks>ul>li:not(#wp-admin-bar-menu-toggle):not(#wp-admin-bar-wp-logo)>a
+		padding-right: .5rem !important
+		padding-left: .5rem !important
+#wp-admin-bar-site-name > a
+	padding-right: .5rem !important
+	padding-left: .5rem !important
+
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before
+	font-size: 16px !important
+
+#wpadminbar #wp-admin-bar-site-name>.ab-item:before
+	width: unset !important
+
+#wp-admin-bar-site-name>.ab-item
+	text-indent: unset !important
+
+#wpadminbar #wp-admin-bar-comments .ab-icon:before
+	height: unset !important
+	line-height: unset !important
+
+#wpadminbar #wp-admin-bar-new-content .ab-icon:before
+	line-height: unset !important
+	height: unset !important

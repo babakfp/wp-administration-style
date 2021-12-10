@@ -1,0 +1,46 @@
+#postimagediv .inside > p.hide-if-no-js
+	&:first-of-type
+		margin: unset
+		text-align: center
+		display: flex
+	&:last-of-type
+		margin: unset
+
+// added thickbox to select the button
+#set-post-thumbnail
+	margin-right: auto
+	margin-left: auto
+	&:not([aria-describedby="set-post-thumbnail-desc"])
+		margin-top: unset
+		overflow: hidden
+		width: 100%
+
+#set-post-thumbnail:not([aria-describedby="set-post-thumbnail-desc"]),
+#remove-post-thumbnail,
+#link-product_tag,
+#link-post_tag
+	@include button(gray)
+
+#link-product_tag,
+#link-post_tag
+	width: 100%
+
+#remove-post-thumbnail
+	margin-bottom: unset
+	display: flex !important
+
+#set-post-thumbnail-desc
+	margin-top: 1rem
+	margin-bottom: 1rem
+
+#postimagediv img
+	border: unset !important
+
+#commentsdiv p
+	padding: 0
+
+#add-new-comment > button
+	@include button(gray)
+	margin-bottom: 1rem
+	line-height: 1
+	min-height: unset

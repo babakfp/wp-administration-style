@@ -1,0 +1,60 @@
+#toplevel_page_woocommerce .wp-menu-image
+  background-image: unset !important
+  &::before
+    +icon(shopping-bag)
+
+#collapse-menu
+  .collapse-button-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    &::before
+      +icon(angle-double-small-right)
+    &::after
+      content: unset !important
+  #collapse-button[aria-expanded="false"] .collapse-button-icon::before
+    +icon(angle-double-small-left)
+
+.wp-menu-image
+
+  &.dashicons-admin-media::before
+    +icon(picture)
+  &.dashicons-dashboard::before
+    +icon(dashboard)
+  &.dashicons-admin-comments::before
+    +icon(comment)
+  &.dashicons-archive::before
+    +icon(box)
+  &.dashicons-chart-bar::before
+    +icon(stats)
+  &.dashicons-megaphone::before
+    +icon(megaphone)
+  &.dashicons-admin-page::before
+    +icon(file)
+  &.dashicons-admin-users::before
+    +icon(user)
+  &.dashicons-admin-settings::before
+    +icon(settings)
+  &.dashicons-admin-appearance::before
+    +icon(layers)
+  &.dashicons-admin-post::before
+    +icon(thumbtack)
+  &.dashicons-admin-tools::before
+    +icon(magic-wand)
+  &.dashicons-admin-plugins::before
+    +icon(physics)
+
+  &::before
+    font-size: 16px !important
+    width: 100% !important
+    height: 100% !important
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 !important
+
+
+.wp-submenu
+  a[href="admin.php?page=wc-addons"],
+  a[href="admin.php?page=wc-addons&section=helper"]
+    display: none !important

@@ -1,0 +1,104 @@
+// card box
+.plugin-card
+	border: unset
+	border-radius: $border-radius
+	overflow: hidden
+
+	// card top box
+	.plugin-card-top
+		padding: 1rem
+	
+	// name wrapper
+	.name
+		margin-top: .5rem
+	
+	h3
+		font-size: .9rem
+		font-weight: 500
+
+	.plugin-action-buttons
+
+		// install button
+		.button
+			padding: .75rem 1.5rem
+			border-radius: $border-radius
+			color: $gray_5
+			min-height: unset
+			transition: 200ms ease-in-out !important
+			user-select: none
+			line-height: 1
+			display: flex
+			gap: .5rem
+
+			// scaping disabled butotn (when plugin is installed)
+			&:not(.button-disabled)
+				background: $brand
+				&:hover, &:focus
+					background: $brandp !important
+				&:focus
+					@include btn_outline($brand, true)
+
+				&.activate-now
+					background: $green
+					&:hover, &:focus
+						background: $greenp !important
+					&:focus
+						@include btn_outline($green, true)
+
+
+			&::before
+				margin: unset
+				color: $gray_20
+				font-size: 14px
+
+
+	.plugin-card-bottom
+		border: unset
+		background: $gray_20
+		padding: 1rem
+
+		.star-rating .star
+			color: #f59e0b
+
+
+	// start: stars
+	.column-rating
+		display: flex
+		align-items: center
+		gap: 4px
+		margin: unset
+
+	.star-rating
+		display: flex
+		align-items: center
+
+		.star
+			display: flex
+			font-size: 1rem
+			margin-top: 7px
+			width: unset
+			height: unset
+
+
+	// last update
+	.column-updated
+		display: flex
+		justify-content: flex-end
+		font-size: 12px
+		gap: .5rem
+		font-weight: 500
+		margin: unset
+
+		strong
+			font-weight: normal
+			@media only screen and (max-width: 600px)
+				display: none
+
+	
+	.compatibility-compatible
+		strong
+			font-weight: 500
+		@media only screen and (max-width: 600px)
+			font-size: 0
+			strong
+				font-size: 13px

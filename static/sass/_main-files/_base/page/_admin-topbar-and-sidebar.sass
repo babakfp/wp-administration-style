@@ -1,0 +1,76 @@
+body.admin-color-fresh
+		
+	// top menu bar > sidebar
+	#wpadminbar, #adminmenuback, #adminmenuwrap, #adminmenu
+		background: $gray_80
+
+	// sidebar menu item submenu active carret
+	#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after
+		border-left-color: $gray_50
+
+	// sidebar menu item text color
+	// top menu text color
+	#adminmenu a,
+	#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon
+		color: $gray_30
+
+	// sidebar menu item current font weight
+	#adminmenu .wp-submenu li.current, #adminmenu .wp-submenu li.current a, #adminmenu .wp-submenu li.current a:hover, #comment-status-display, #dashboard_right_now .versions .b, #ed_reply_toolbar #ed_reply_strong, #pass-strength-result.short, #pass-strength-result.strong, #post-visibility-display, .feature-filter .feature-name, .item-controls .item-order a, .media-item .percent, .plugins .name
+		&:hover
+			color: $gray_20
+
+	// sidebar menu item icon color
+	// sidebar menu item icon color on item hover/focus
+	// top menu icons color
+	#adminmenu .wp-menu-image:before,
+	#adminmenu  li a:focus .wp-menu-image:before, #adminmenu  li.opensub .wp-menu-image:before, #adminmenu  li:hover .wp-menu-image:before,
+	#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before
+		color: $gray_50 !important
+		color: rgba(white, .3) !important
+
+	// sidebar menu item bg and text on hover/focus
+	#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus,
+	#adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top>a:focus,
+	#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu,
+	#adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
+	#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu, // menu item bg and text on active/opened
+	#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus, // top menu bar
+	#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input // top menu user box
+		background: $gray_70
+		color: $gray_20
+
+	#wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu
+		background: $gray_70
+
+	// new updated cound boble
+	#adminmenu .awaiting-mod, #adminmenu .update-plugins,
+	#adminmenu li a.wp-has-current-submenu .update-plugins, #adminmenu li.current a .awaiting-mod
+		background: $gray_60
+
+	// top menu bar link hover
+	#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover>a, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:focus, #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:hover, #wpadminbar li #adminbarsearch.adminbar-focused:before, #wpadminbar li .ab-item:focus .ab-icon:before, #wpadminbar li .ab-item:focus:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover #adminbarsearch:before, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
+	#wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label
+		color: $gray_20
+
+	// top menu bar about wordpress link list
+	#wp-admin-bar-wp-logo-default
+		border-bottom: 1px dashed $gray_60
+
+	// collapse sidebar button
+	#collapse-button
+		color: $gray_30
+		&:hover
+			background: $gray_70
+			color: $gray_20
+		.collapse-button-icon
+			color: $gray_50
+		.collapse-button-label
+			top: 6px
+
+	// bug - top menu comments counts low opacity
+	#wpadminbar #wp-admin-bar-comments .count-0
+		opacity: 1
+
+
+#adminmenu a:focus, #adminmenu a:hover, .folded #adminmenu .wp-submenu-head:hover
+	box-shadow: inset -2px 0 0 0 rgba(white, .4)

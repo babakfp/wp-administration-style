@@ -1,0 +1,31 @@
+.wp-media-buttons .button:active
+  top: 1px
+  margin-top: -1px
+  margin-bottom: 1px
+  
+.insert-media
+  display: flex
+  align-items: center
+  gap: .5rem
+  padding-right: .5rem !important
+  padding-left: .5rem !important
+  border-radius: $border-radius $border-radius 0 0
+  background: $gray_20 !important
+  color: $gray_50 !important
+  font-size: 12px !important
+  min-height: unset !important
+  line-height: unset !important
+  background: transparent !important
+  height: 32px !important
+
+  // Old icon
+  .wp-media-buttons-icon
+    display: none
+
+  // New icon
+  &::before
+    +icon(picture)
+
+  // Unnesesery thing
+  &::after
+    content: unset !important

@@ -1,0 +1,66 @@
+#wp-content-editor-tools
+  // give a background color because of the transparenty. content shows behind it.
+  background: $gray_10 !important
+  border-bottom: unset !important
+
+// unnesesery
+.wp-editor-tools::after
+  content: unset !important
+
+// ---
+
+.mce-container-body
+  padding: unset !important
+  background: $gray_20 !important
+
+.mce-toolbar-grp
+  border: unset !important
+
+// top bar box-shadow. not nesesery
+.mce-top-part::before
+  content: unset !important
+
+.mce-toolbar-grp
+  padding-top: 4px !important
+  padding-bottom: 4px !important
+
+.mce-ico
+  color: $gray-50 !important
+
+.mce-widget.mce-active .mce-ico
+  color: $brand !important
+
+.mce-caret
+  border: unset !important
+  &::before
+    +icon(caret-down)
+
+.mce-listbox
+  button
+    display: flex
+    align-items: center
+    gap: .25rem
+    height: 24px
+    padding: 0 .5rem 0 .25rem !important
+  .mce-txt
+    padding: unset !important
+  .mce-caret
+    color: $gray-40 !important
+    margin-right: unset !important
+    margin-left: unset !important    
+    position: unset !important
+    margin-top: unset !important
+    top: unset !important
+    left: unset !important
+    right: unset !important
+    width: 14px
+    height: 100%
+    display: flex
+    align-items: center
+
+// .mce-toolbar-grp,
+// #mceu
+//   background: white !important
+
+// .mce-toolbar-grp
+//   width: 100%
