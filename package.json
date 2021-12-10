@@ -18,7 +18,7 @@
 		"mce:once": "sass static/sass/_main-files/mce.sass:static/css/mce.css --style compressed --no-source-map",
     "mce-ifr:once": "sass static/sass/_main-files/mce-ifr.sass:static/css/mce-ifr.css --style compressed --no-source-map",
 		"elementor:once": "sass static/sass/_main-files/elementor.sass:static/css/elementor.css --style compressed --no-source-map",
-		"elementor-editor:once": "sass static/sass/_main-files/elementor-editor.scss:static/css/elementor-editor.css --watch --style compressed --no-source-map",
+		"elementor-editor:once": "sass static/sass/_main-files/elementor-editor.scss:static/css/elementor-editor.css --style compressed --no-source-map",
 		"woocommerce:once": "sass static/sass/_main-files/woocommerce.sass:static/css/woocommerce.css --style compressed --no-source-map",
 		"signin:once": "sass static/sass/_main-files/signin.sass:static/css/signin.css --style compressed --no-source-map",
 
