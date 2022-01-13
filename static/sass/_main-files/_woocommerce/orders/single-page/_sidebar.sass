@@ -1,0 +1,83 @@
+#poststuff #woocommerce-order-actions .inside ul.order_actions li
+	display: flex !important
+	align-items: center !important
+	justify-content: space-between
+	gap: 8px !important
+	padding: unset !important
+
+	// سفارش اعمال
+	&#actions
+		padding-bottom: .75rem !important
+		margin-bottom: .75rem !important
+		border: unset !important
+		border-bottom: 1px dashed $gray_20 !important
+		float: unset !important
+		clear: unset !important
+		width: unset !important
+
+		select
+			margin: unset !important
+			width: 100% !important
+			float: unset !important
+
+		button
+			min-width: 38.4px !important
+			height: 38.4px !important
+			min-height: unset !important
+			
+			&::after
+				top: 50% !important
+				left: 50% !important
+				right: unset !important
+				transform: translate(-50%, -50%) !important
+				height: unset !important
+
+	// main page button. save
+	.save_order
+		margin: unset !important
+		float: unset !important
+		width: 50%
+
+		padding: .5rem 1rem
+		border-radius: $border-radius
+		transition: 200ms ease-in-out !important
+		user-select: none
+
+		padding-right: 2rem
+		padding-left: 2rem
+		background: $brand
+		color: white
+		margin-bottom: 0 !important
+
+#delete-action a.submitdelete.deletion
+	width: 100% !important
+
+// باکس یادداشت های سفارش
+
+ul.order_notes
+	margin: unset !important
+	display: grid
+	gap: 8px
+
+	p.meta
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-right: unset !important
+		padding-left: unset !important
+
+li.note.system-note
+	padding: unset !important
+	margin: unset !important
+
+// افزودن یادداشت
+div.add_note
+	padding: unset !important
+	margin-top: 1rem !important
+	padding-top: 1rem !important
+	p
+		margin: unset !important
+
+button.add_note
+	height: 38.4px
+	padding: 0 1rem

@@ -1,0 +1,30 @@
+// جزئیات سفارش شماره 409
+.woocommerce-order-data__heading
+	margin-bottom: 1rem !important
+	padding-bottom: 1rem !important
+	border-bottom: 1px solid gainsboro
+
+// ایدی مشتری
+.woocommerce-Order-customerIP
+	direction: ltr !important
+	display: inline-block
+
+#order_data .order_data_column .form-field
+
+	// همگانی. اینپوت های روز و ماه
+	.hour, .minute
+		width: 4em !important
+		/* Remove Arrows/Spinners - Firefox */
+		-moz-appearance: textfield
+
+		/* Remove Arrows/Spinners - Chrome, Safari, Edge, Opera */
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button
+			-webkit-appearance: none
+			margin: 0
+
+	// همگانی. اینپوت های روز و ماه و سال
+	.date-picker, .hour, .minute
+		direction: ltr
+
+#order_data .order_data_column .form-field .hour,
