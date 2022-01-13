@@ -46,26 +46,13 @@
 #wp-admin-bar-site-name > .ab-item::before
 	+icon(link)
 
-#wpadminbar #wp-admin-bar-wp-logo > .ab-item
-	padding: unset !important
-
 @media only screen and (min-width: 782px)
-	#wp-admin-bar-wp-logo > .ab-item
-		width: 36px !important
-		display: flex !important
-		justify-content: center !important
-
-
-@media only screen and (min-width: 782px)
-	#wpadminbar .quicklinks>ul>li:not(#wp-admin-bar-menu-toggle):not(#wp-admin-bar-wp-logo)>a
+	#wpadminbar .quicklinks>ul>li:not(#wp-admin-bar-menu-toggle)>a
 		padding-right: .5rem !important
 		padding-left: .5rem !important
 #wp-admin-bar-site-name > a
 	padding-right: .5rem !important
 	padding-left: .5rem !important
-
-#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before
-	font-size: 16px !important
 
 #wpadminbar #wp-admin-bar-site-name>.ab-item:before
 	width: unset !important
@@ -80,3 +67,6 @@
 #wpadminbar #wp-admin-bar-new-content .ab-icon:before
 	line-height: unset !important
 	height: unset !important
+
+#wpadminbar #wp-admin-bar-wp-logo
+	display: none !important
