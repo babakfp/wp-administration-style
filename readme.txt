@@ -4,7 +4,7 @@ Donate link:        https://idpay.ir/babakfp
 Tags:               farsi font, farsi, vazir, iran, فونت فارسی, فارسی, فونت وزیر
 Requires at least:  5.0
 Tested up to:       5.8.2
-Stable tag:         6.26.0
+Stable tag:         6.27.0
 Requires PHP:       7.0
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
@@ -43,6 +43,9 @@ License URI:        https://www.gnu.org/licenses/gpl-3.0.html
 
 
 == Changelog ==
+
+= 6.27.0 =
+* حل مشکل صفحه ورود بعد از بروزرسانی جدید ۵.۹ وردپرس
 
 = 6.26.0 =
 * حل مشکل نمایش داده نشدن دکمه ویرایش با المنتور در ویرایشگر گوتنبرگ. (۲ ساعت دارم دنبال این دکمه میگردم. هی میگم نکنه مشکل از وردپرسه یا المنتور یا نکنه یه اختلای چیزی هست! آخر نگو که مشکل از افزونه خود من بوده😂😂. مشکلی بود گذارش بدید تا همه اینطور علاف نشیم😂)
