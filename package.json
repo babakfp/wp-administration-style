@@ -9,7 +9,7 @@
 		"mce": "sass static/sass/_main-files/mce.sass:static/css/mce.css --watch --style compressed --no-source-map",
     "mce-ifr": "sass static/sass/_main-files/mce-ifr.sass:static/css/mce-ifr.css --watch --style compressed --no-source-map",
 		"elementor": "sass static/sass/_main-files/elementor.sass:static/css/elementor.css --watch --style compressed --no-source-map",
-		"elementor-editor": "sass static/sass/_main-files/elementor-editor.scss:static/css/elementor-editor.css --watch --style compressed --no-source-map",
+		"elementor-editor": "sass static/sass/_main-files/elementor-editor.sass:static/css/elementor-editor.css --watch --style compressed --no-source-map",
 		"woocommerce": "sass static/sass/_main-files/woocommerce.sass:static/css/woocommerce.css --watch --style compressed --no-source-map",
 		"signin": "sass static/sass/_main-files/signin.sass:static/css/signin.css --watch --style compressed --no-source-map"
 	}

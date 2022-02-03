@@ -4,7 +4,7 @@ Donate link:        https://idpay.ir/babakfp
 Tags:               farsi font, farsi, vazir, iran, فونت فارسی, فارسی, فونت وزیر
 Requires at least:  5.0
 Tested up to:       5.8.2
-Stable tag:         6.27.1
+Stable tag:         6.28.2
 Requires PHP:       7.0
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
@@ -43,6 +43,9 @@ License URI:        https://www.gnu.org/licenses/gpl-3.0.html
 
 
 == Changelog ==
+
+= 6.28.2 =
+* بهینه‌سازی زمینه کد سفارشی ویرایشگر المنتور همراه با اضافه کردن فونت جدید برای خوانایی بهتر کد.
 
 = 6.27.2 =
 * بهینه‌سازی ظاهری صفحه ورود پنل ادمین وردپرس.
