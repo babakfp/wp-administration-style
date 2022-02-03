@@ -1,8 +1,7 @@
 {
 	"search.exclude": {
-		"static/css": true,
-		"static/fonts": true,
-		"static/sass/__modules__/": true,
+		"assets/css": true,
+		"assets/fonts": true,
 		"LICENSE": true,
 		"README.md": true,
 		"readme.txt": true,
