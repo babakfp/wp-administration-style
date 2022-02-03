@@ -8,5 +8,6 @@
 		"readme.txt": true,
 		"package.json": true,
 		".gitignore": true,
+		"assets/sass/packages": true,
 	}
 }
