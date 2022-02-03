@@ -101,7 +101,26 @@ form
 	border-bottom: 1px solid $gray_20 !important
 	border-left: 1px solid $gray_20 !important
 
-.language-switcher .button
-	height: $input_h !important
-	padding-right: 16px !important
-	padding-left: 16px !important
+.language-switcher
+	width: 320px !important
+
+#language-switcher
+	display: flex !important
+	padding-right: unset !important
+	padding-left: unset !important
+	gap: 1rem !important
+
+	.button
+		height: $input_h !important
+		padding-right: 16px !important
+		padding-left: 16px !important
+		margin: unset !important
+		background: white
+		color: gray
+
+[for=language-switcher-locales]
+	display: none !important
+
+#language-switcher-locales
+	width: 100% !important
+	margin: unset !important
