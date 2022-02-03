@@ -13,7 +13,7 @@
  * License URI:   https://www.gnu.org/licenses/gpl-3.0.html
 */
 
-defined('ABSPATH') or die;
+defined( 'ABSPATH' ) or die;
 
 if ( ! class_exists('wp_administration_style') ) {
   class wp_administration_style {
