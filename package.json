@@ -11,19 +11,6 @@
 		"elementor": "sass static/sass/_main-files/elementor.sass:static/css/elementor.css --watch --style compressed --no-source-map",
 		"elementor-editor": "sass static/sass/_main-files/elementor-editor.scss:static/css/elementor-editor.css --watch --style compressed --no-source-map",
 		"woocommerce": "sass static/sass/_main-files/woocommerce.sass:static/css/woocommerce.css --watch --style compressed --no-source-map",
-		"signin": "sass static/sass/_main-files/signin.sass:static/css/signin.css --watch --style compressed --no-source-map",
-
-		"base:once": "sass static/sass/_main-files/base.sass:static/css/base.css --style compressed --no-source-map",
-		"gutenberg:once": "sass static/sass/_main-files/gutenberg.sass:static/css/gutenberg.css --style compressed --no-source-map",
-		"mce:once": "sass static/sass/_main-files/mce.sass:static/css/mce.css --style compressed --no-source-map",
-    "mce-ifr:once": "sass static/sass/_main-files/mce-ifr.sass:static/css/mce-ifr.css --style compressed --no-source-map",
-		"elementor:once": "sass static/sass/_main-files/elementor.sass:static/css/elementor.css --style compressed --no-source-map",
-		"elementor-editor:once": "sass static/sass/_main-files/elementor-editor.scss:static/css/elementor-editor.css --style compressed --no-source-map",
-		"woocommerce:once": "sass static/sass/_main-files/woocommerce.sass:static/css/woocommerce.css --style compressed --no-source-map",
-		"signin:once": "sass static/sass/_main-files/signin.sass:static/css/signin.css --style compressed --no-source-map",
-
-		"generate-css": "npm-run-all base:once gutenberg:once mce:once mce-ifr:once elementor:once woocommerce:once signin:once elementor-editor:once",
-
-		"add:sass-font-face": "git clone https://github.com/babakfp/sass-font-face.git static/sass/__modules__/sass-font-face"
+		"signin": "sass static/sass/_main-files/signin.sass:static/css/signin.css --watch --style compressed --no-source-map"
 	}
 }
