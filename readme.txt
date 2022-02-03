@@ -1,5 +1,5 @@
 ﻿=== WP Administration Style ===
-Contributors:       pixer
+Contributors:       Pixer
 Donate link:        https://idpay.ir/babakfp
 Tags:               farsi font, farsi, vazir, iran, فونت فارسی, فارسی, فونت وزیر
 Requires at least:  5.0
