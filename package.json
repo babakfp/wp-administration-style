@@ -1,8 +1,4 @@
 {
-	"name": "wp-administration-style",
-	"version": "6.1.1",
-	"license": "GPL-3.0",
-	"repository": "https://github.com/babakfp/wp-administration-style.git",
 	"scripts": {
 		"base": "sass assets/sass/_main-files/base.sass:assets/css/base.css --watch --style compressed --no-source-map",
 		"gutenberg": "sass assets/sass/_main-files/gutenberg.sass:assets/css/gutenberg.css --watch --style compressed --no-source-map",
@@ -23,6 +19,5 @@
 		"signin:once": "sass assets/sass/_main-files/signin.sass:assets/css/signin.css --style compressed --no-source-map",
 
 		"generate-css": "npm-run-all base:once gutenberg:once mce:once mce-ifr:once elementor:once woocommerce:once signin:once elementor-editor:once"
-
 	}
 }
