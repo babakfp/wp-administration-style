@@ -5,7 +5,7 @@
  * Author: 			  babakfp
  * Author URI: 	  https://babakfp.ir
  * Version: 		  6.5.0
- * Tested up to:  5.8.2
+ * Tested up to:  5.9.0
  * Text Domain:   wp-administration-style
  * Domain Path:   /languages
  * Tags:          farsi, farsi font, admin, panel, فارسی, فونت فارسی, ادمین, پنل
