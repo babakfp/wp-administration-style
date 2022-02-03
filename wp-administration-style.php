@@ -4,7 +4,7 @@
  * Description:   تغییرات ظاهری به همراه افزودن فونت فارسی "وزیر" به پنل مدیریت وردپرس.
  * Author: 			  babakfp
  * Author URI: 	  https://babakfp.ir
- * Version: 		  6.28.2
+ * Version: 		  6.29.2
  * Tested up to:  5.8.2
  * Text Domain:   wp-administration-style
  * Domain Path:   /languages
@@ -25,7 +25,7 @@ if ( ! class_exists('wp_administration_style') ) {
       $this->static = $this->url . 'static/';
       $this->css = $this->static . 'css/';
       $this->js = $this->static . 'js/';
-      $this->version = '6.27.1';
+      $this->version = '6.29.2';
       $this->sutup_plugin();
     }
 
