@@ -41,7 +41,7 @@ if ( ! class_exists( 'Wp_Administration_Style' ) ) {
 		function enqueue_styles() {
 			wp_enqueue_style('wp_administration_style-mce-ifr', WP_ADMINISTRATION_STYLE['CSS'].'mce-ifr.css', [], WP_ADMINISTRATION_STYLE['V']);
 			wp_enqueue_style('wp_administration_style-base', WP_ADMINISTRATION_STYLE['CSS'].'base.css', [], WP_ADMINISTRATION_STYLE['V']);
-			wp_enqueue_style('wp_administration_style-uicons', WP_ADMINISTRATION_STYLE['ASSETS'].'fonts/uicons-regular-rounded/css/uicons-regular-rounded.css', [], WP_ADMINISTRATION_STYLE['V']);
+			wp_enqueue_style('wp_administration_style-uicons', WP_ADMINISTRATION_STYLE['ASSETS'].'fonts/wp-administration-style-icons/style.css', [], WP_ADMINISTRATION_STYLE['V']);
 	
 			if (is_gutenberg_active()):
 				wp_enqueue_style('wp_administration_style-gutenberg', WP_ADMINISTRATION_STYLE['CSS'].'gutenberg.css', [], WP_ADMINISTRATION_STYLE['V']);
@@ -61,7 +61,7 @@ if ( ! class_exists( 'Wp_Administration_Style' ) ) {
 	
 		function my_login_stylesheet() {
 			wp_enqueue_style('wp_administration_style-signin', WP_ADMINISTRATION_STYLE['CSS'].'signin.css', [], WP_ADMINISTRATION_STYLE['V']);
-			wp_enqueue_style('wp_administration_style-uicons', WP_ADMINISTRATION_STYLE['ASSETS'].'fonts/uicons-regular-rounded/css/uicons-regular-rounded.css', [], WP_ADMINISTRATION_STYLE['V']);
+			wp_enqueue_style('wp_administration_style-uicons', WP_ADMINISTRATION_STYLE['ASSETS'].'fonts/wp-administration-style-icons/style.css', [], WP_ADMINISTRATION_STYLE['V']);
 		}
 	
 	}

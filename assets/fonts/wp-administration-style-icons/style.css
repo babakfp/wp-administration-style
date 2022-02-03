@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'wp-administration-style-icons';
+  src:
+    url('fonts/wp-administration-style-icons.ttf?gevk25') format('truetype'),
+    url('fonts/wp-administration-style-icons.woff?gevk25') format('woff'),
+    url('fonts/wp-administration-style-icons.svg?gevk25#wp-administration-style-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
