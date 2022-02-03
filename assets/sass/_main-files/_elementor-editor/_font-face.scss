@@ -5,7 +5,7 @@
 	font-style: normal,
 	weight: ( Thin 100, Light 300, Regular 400, Medium 500, Bold 600, "Black" 800, ),
 	url: "../fonts/Vazir/FD-WOL/Vazir-WEIGHT-FD-WOL.SUFFIX",
-	suffix: eot woff2 woff ttf,
+	suffix: woff2 woff,
 ));
 
 @include font-face((
@@ -13,7 +13,7 @@
 	font-style: normal,
 	weight: ( Thin 100, Light 300, Regular 400, Medium 500, Bold 600, "Black" 800, ),
 	url: "../fonts/Vazir/WOL/Vazir-WEIGHT-WOL.SUFFIX",
-	suffix: eot woff2 woff ttf,
+	suffix: woff2 woff,
 ));
 
 @include font-face((
