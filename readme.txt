@@ -4,7 +4,7 @@ Donate link:        https://idpay.ir/babakfp
 Tags:               farsi font, farsi, vazir, iran, فونت فارسی, فارسی, فونت وزیر
 Requires at least:  5.0
 Tested up to:       5.8.2
-Stable tag:         6.29.2
+Stable tag:         6.32
 Requires PHP:       7.0
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
@@ -43,6 +43,11 @@ License URI:        https://www.gnu.org/licenses/gpl-3.0.html
 
 
 == Changelog ==
+
+= 6.32 =
+* حذف بسته آیکون‌های فعلی و جایگذینی آن با بسته اختصاصی برای بهینه‌سازی سرعت.
+* حذف فرمت‌های .svg, .ttf, .eot از فونت‌ها و آیکون‌ها برای بهینه‌سازی سرعت. (این فرمت‌ها ضروری نیستن).
+* یسری تغییرات ظاهری کوچیک
 
 = 6.29.2 =
 * حذف همه وزن‌های فونت MonoLisa به جز وزن 400.
