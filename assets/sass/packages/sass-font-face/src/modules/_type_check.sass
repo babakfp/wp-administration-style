@@ -1,0 +1,23 @@
+@function is_str($value)
+  @return type-of($value) == string
+
+@function is_bool($value)
+  @return type-of($value) == bool
+
+@function is_num($value)
+  @return type-of($value) == number
+
+@function is_map($value)
+  @return type-of($value) == map
+
+@function is_list($value)
+  @return type-of($value) == list
+
+@function is_color($value)
+  @return type-of($value) == color
+
+@function is_null($value)
+  @return $value == null
+
+@function is_empty_str($value)
+  @return $value == ""

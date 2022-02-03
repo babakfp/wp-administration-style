@@ -1,0 +1,40 @@
+@use "sass:map";
+@use "sass:string";
+@use "modules/_str_replace" as *;
+
+
+@function suffix_formats($suffix) {
+	$formats: (
+		woff: woff,
+		woff2: woff2,
+		otf: opentype,
+		ttf: truetype,
+		eot: embedded-opentype
+	);
+
+	@if map-has-key($formats, $suffix) {
+		@return map-get($formats, $suffix);
+	} @else {
+		@return $suffix;
+	}
+}
+
+
+@function suffix_mods($font-family, $suffix) {
+  $mods:(
+    eot: "?#iefix",
+    svg: "#" + str_replace($font-family, " ", "_")
+  );
+  @return if(map-has-key($mods, $suffix), $suffix + map-get($mods, $suffix), $suffix);
+}
+
+
+@function validate-required-args($options) {
+	$requiredArgs: font-family suffix url;
+	@each $arg in $requiredArgs {
+		@if not map.get($options, $arg) {
+			@error "Invalid `#{$arg}` argument.";
+		}
+	}
+	@return $options;
+}

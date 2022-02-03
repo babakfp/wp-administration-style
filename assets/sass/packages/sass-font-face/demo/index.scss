@@ -1,0 +1,34 @@
+@use "../src/" as *;
+
+@include font-face((
+  font-family: "Sans Serif",
+
+  // Follow the order
+  // suffix: eot woff2 woff ttf svg,
+  suffix: woff2 ttf,
+
+  // output: sans-serif-italic-100.woff2
+  // weight: 100 200,
+  // output: sans-serif-italic-thin.woff2
+  weight: (
+    thin 100,
+    extralight 200,
+  ),
+
+  // Replace the <path> and <filename>.
+  // You can remove the "/", and write the path however you want.
+  // Don't worry about "WEIGHT" and "SUFFIX", they replaced by the mixin.
+  // You can remove the "WEIGHT" if you don't have the weight name or unit in your filename.
+  //    for example in icon webfonts.
+  // For italic font family, write the "italic" word in the string below.
+  // If string contains the "italic" word, the css style property value going to be "italic",
+  //    if not, value going to be "normal".
+	// url: "<path>/<filename>.SUFFIX",
+	// url: "<path>/<filename>-WEIGHT.SUFFIX",
+	// url: "<path>/<filename>-italic-WEIGHT.SUFFIX",
+  url: "../fonts/sans-serif-italic-WEIGHT.SUFFIX",
+
+  // You can write actual css hire.
+  // Keep in mind that you need to use (,) instead of (;).
+  display: block,
+));

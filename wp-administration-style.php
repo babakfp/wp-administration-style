@@ -15,56 +15,57 @@
 
 defined( 'ABSPATH' ) or die;
 
+define( 'WP_ADMINISTRATION_STYLE', [
+	'V' => '6.29.2',
+	'INCLUDES' => plugin_dir_path( __FILE__ ) . 'includes/',
+	'ASSETS' => plugin_dir_url( __FILE__ ) . 'assets/',
+	'CSS' => plugin_dir_url( __FILE__ ) . 'assets/css/',
+	'JS' => plugin_dir_url( __FILE__ ) . 'assets/js/',
+] );
+
 if ( ! class_exists( 'Wp_Administration_Style' ) ) {
 
 	final class Wp_Administration_Style {
 			
 		public function __construct() {
-			$this->path = plugin_dir_path(__FILE__);
-			$this->url = plugin_dir_url(__FILE__);
-			$this->includes = $this->path . 'includes/';
-			$this->static = $this->url . 'static/';
-			$this->css = $this->static . 'css/';
-			$this->js = $this->static . 'js/';
-			$this->version = '6.29.2';
 			$this->sutup_plugin();
 		}
 	
 		function sutup_plugin() {
-			require_once $this->includes .'is-gutenberg-active.php';
-			require_once $this->includes .'elementor-editor.php';
+			require_once WP_ADMINISTRATION_STYLE['INCLUDES'].'is-gutenberg-active.php';
+			require_once WP_ADMINISTRATION_STYLE['INCLUDES'].'elementor-editor.php';
 			add_action('admin_enqueue_scripts', array($this, 'enqueue_styles'));
 			add_action('login_enqueue_scripts', array($this, 'my_login_stylesheet'));
 		}
 	
 		function enqueue_styles() {
-			wp_enqueue_style('wp_administration_style-mce-ifr', $this->css .'mce-ifr.css', array(), $this->version);
-			wp_enqueue_style('wp_administration_style-base', $this->css .'base.css', array(), $this->version);
-			wp_enqueue_style('wp_administration_style-uicons', $this->static .'fonts/uicons-regular-rounded/css/uicons-regular-rounded.css', array(), $this->version);
+			wp_enqueue_style('wp_administration_style-mce-ifr', WP_ADMINISTRATION_STYLE['CSS'].'mce-ifr.css', [], WP_ADMINISTRATION_STYLE['V']);
+			wp_enqueue_style('wp_administration_style-base', WP_ADMINISTRATION_STYLE['CSS'].'base.css', [], WP_ADMINISTRATION_STYLE['V']);
+			wp_enqueue_style('wp_administration_style-uicons', WP_ADMINISTRATION_STYLE['ASSETS'].'fonts/uicons-regular-rounded/css/uicons-regular-rounded.css', [], WP_ADMINISTRATION_STYLE['V']);
 	
 			if (is_gutenberg_active()):
-				wp_enqueue_style('wp_administration_style-gutenberg', $this->css .'gutenberg.css', array(), $this->version);
+				wp_enqueue_style('wp_administration_style-gutenberg', WP_ADMINISTRATION_STYLE['CSS'].'gutenberg.css', [], WP_ADMINISTRATION_STYLE['V']);
 			endif;
 	
 			if (is_plugin_active('elementor/elementor.php')):
-				wp_enqueue_style('wp_administration_style-elementor', $this->css .'elementor.css', array(), $this->version);
+				wp_enqueue_style('wp_administration_style-elementor', WP_ADMINISTRATION_STYLE['CSS'].'elementor.css', [], WP_ADMINISTRATION_STYLE['V']);
 			endif;
 	
 			if (is_plugin_active('woocommerce/woocommerce.php')):
-				wp_enqueue_style('wp_administration_style-woocommerce', $this->css .'woocommerce.css', array(), $this->version);
+				wp_enqueue_style('wp_administration_style-woocommerce', WP_ADMINISTRATION_STYLE['CSS'].'woocommerce.css', [], WP_ADMINISTRATION_STYLE['V']);
 			endif;
 	
-			wp_enqueue_style('wp_administration_style-mce', $this->css .'mce.css', array(), $this->version);
-			wp_enqueue_script('wp_administration_style-js', $this->js .'index.js', array(), $this->version);
+			wp_enqueue_style('wp_administration_style-mce', WP_ADMINISTRATION_STYLE['CSS'].'mce.css', [], WP_ADMINISTRATION_STYLE['V']);
+			wp_enqueue_script('wp_administration_style-js', WP_ADMINISTRATION_STYLE['JS'].'index.js', [], WP_ADMINISTRATION_STYLE['V']);
 		}
 	
 		function my_login_stylesheet() {
-			wp_enqueue_style('wp_administration_style-signin', $this->css .'signin.css', array(), $this->version);
-			wp_enqueue_style('wp_administration_style-uicons', $this->static .'fonts/uicons-regular-rounded/css/uicons-regular-rounded.css', array(), $this->version);
+			wp_enqueue_style('wp_administration_style-signin', WP_ADMINISTRATION_STYLE['CSS'].'signin.css', [], WP_ADMINISTRATION_STYLE['V']);
+			wp_enqueue_style('wp_administration_style-uicons', WP_ADMINISTRATION_STYLE['ASSETS'].'fonts/uicons-regular-rounded/css/uicons-regular-rounded.css', [], WP_ADMINISTRATION_STYLE['V']);
 		}
 	
 	}
 
   new Wp_Administration_Style();
-	
+
 }

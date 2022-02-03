@@ -1,0 +1,20 @@
+@use "type_check" as *
+  
+// in $str replace $substr with $replace.
+// accepting number type values too because string values that contain numbers at the beginning of them are considered as a number type.
+// author: hugo giraudel
+
+@function str_replace($str, $substr, $replace: "")
+
+  @if is_num($str)
+    $str: "#{$str}"
+
+  @if is_num($substr)
+    $substr: "#{$substr}"
+
+  $index: str-index($str, $substr)
+
+  @if $index
+    @return str-slice($str, 1, $index - 1) + $replace + str_replace(str-slice($str, $index + str-length($substr)), $substr, $replace)
+
+  @return $str

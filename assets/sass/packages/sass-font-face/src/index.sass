@@ -1,0 +1,53 @@
+@use "sass:map"
+@use "sass:list"
+@use "functions" as *
+@use "modules/type_check" as *
+@use "modules/str_replace" as *
+
+@mixin font-face($options)
+
+	$options: validate-required-args($options)
+
+	$url: map.get($options, url)
+
+	@each $weight in map.get($options, weight)
+
+		$src: null
+
+		@font-face
+			font-family: map.get($options, font-family)
+
+			@if is_num($weight)
+				font-weight: $weight
+				$url: str_replace($url, WEIGHT, $weight)
+			@else if is_list($weight)
+				// font weight unit. example: 100
+				font-weight: list.nth($weight, 2)
+				// font weight name. example: thin
+				$url: str_replace($url, WEIGHT, list.nth($weight, 1))
+			
+			@each $suffix in map.get($options, suffix)
+				$mod: suffix_mods(map.get($options, font-family), $suffix)
+				$format: suffix_formats($suffix)
+				$url: str_replace($url, SUFFIX, $mod)
+				$src: append($src, url($url) format("#{$format}"), comma)
+				
+				// we need to have an extra src property for the .eot font format.
+				@if $suffix == eot
+					src: url($url)
+
+				$url: str_replace($url, $mod, SUFFIX)
+
+			font-style: if(str-index($url, italic), italic, normal)
+
+			@if is_num($weight)
+				$url: str_replace($url, $weight, WEIGHT)
+			@else if is_list($weight)
+				$url: str_replace($url, list.nth($weight, 1), WEIGHT)
+
+			// custom extra css properties.
+			@each $property, $value in $options
+				@if $property != font-family and $property != suffix and $property != weight and $property != url
+					#{$property}: #{$value}
+
+			src: $src
