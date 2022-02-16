@@ -40,12 +40,9 @@
 					border-right: 2px solid #e5e7eb !important;
 				}
 
-        /*
-          bottom element shows element type. removed because takes space and isn't nesesery.
-          TOOD: doesnt work
-        */
-        #mceu_24-body #mceu_32.mce-statusbar.mce-rtl.mce-container.mce-panel.mce-stack-layout-item.mce-last {
-          display: none !important;
+        .mce-statusbar {
+					height: 0 !important;
+					overflow: hidden;
         }
       </style>
     `)

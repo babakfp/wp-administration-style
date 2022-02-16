@@ -29,6 +29,9 @@ License URI:        https://www.gnu.org/licenses/gpl-3.0.html
 
 == Changelog ==
 
+= 6.6.0 =
+* حل مشکل نمایش داده نشدن نوارابزار لینک در ویرایشگر MCE.
+
 = 6.5.0 =
 * حتما بروزرسانی کنید.
 
