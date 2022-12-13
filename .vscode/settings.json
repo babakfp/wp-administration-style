@@ -1,4 +1,5 @@
 {
+	"editor.tabSize": 4,
 	"search.exclude": {
 		"assets/css": true,
 		"assets/fonts": true,
