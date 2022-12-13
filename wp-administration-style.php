@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:   استایل فارسی برای مدیریت وردپرس
- * Description:   تغییرات ظاهری به همراه افزودن فونت فارسی "وزیر" به پنل مدیریت وردپرس.
- * Author: 			  babakfp
- * Author URI: 	  https://babakfp.ir
- * Version: 		  6.8.0
- * Tested up to:  5.9.0
- * Text Domain:   wp-administration-style
- * Domain Path:   /languages
- * Tags:          farsi, farsi font, admin, panel, فارسی, فونت فارسی, ادمین, پنل
- * License:       GPLv3 or later
- * License URI:   https://www.gnu.org/licenses/gpl-3.0.html
+ * Plugin Name: 	استایل فارسی برای مدیریت وردپرس
+ * Description:   	تغییرات ظاهری به همراه افزودن فونت فارسی "وزیر" به پنل مدیریت وردپرس.
+ * Author:			babakfp
+ * Author URI: 	  	https://babakfp.ir
+ * Version: 		6.8.0
+ * Tested up to:  	6.1.1
+ * Text Domain:   	wp-administration-style
+ * Tags:          	farsi, farsi font, admin, panel, فارسی, فونت فارسی, ادمین, پنل
+ * License:       	GPLv3 or later
+ * License URI:   	https://www.gnu.org/licenses/gpl-3.0.html
+ * Domain Path:   	/languages
 */
 
 defined( 'ABSPATH' ) or die;
