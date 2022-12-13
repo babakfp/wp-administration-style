@@ -3,13 +3,13 @@ defined( 'ABSPATH' ) or die;
 
 /**
  * Plugin Name: 	استایل فارسی برای مدیریت وردپرس
- * Description:   	فارسی‌سازی و زیباسازی ظاهر داشبورد وردپرس. استفاده از فونت زیبای وزیر برای خوانایی بهتر متون فارسی.
+ * Description:   	فارسی‌سازی, زیباسازی و بهینه‌سازی ظاهر داشبورد وردپرس. استفاده از فونت زیبای وزیر برای خوانایی بهتر متون فارسی.
  * Author:			babakfp
  * Author URI: 	  	https://babakfp.ir
  * Version: 		6.8.0
  * Tested up to:  	6.1.1
  * Text Domain:   	wp-administration-style
- * Tags:          	farsi, farsi font, admin, panel, فارسی, فونت فارسی, ادمین, پنل
+ * Tags:          	farsi, farsi font, farsi dashboard, فارسی, فونت فارسی, داشبورد فارسی, فارسی‌سازی
  * License:       	GPLv3 or later
  * License URI:   	https://www.gnu.org/licenses/gpl-3.0.html
  * Domain Path:   	/languages
