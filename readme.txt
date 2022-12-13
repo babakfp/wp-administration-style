@@ -3,7 +3,7 @@ Contributors:       Pixer
 Donate link:        https://idpay.ir/babakfp
 Tags:               farsi font, farsi, vazir, iran, فونت فارسی, فارسی, فونت وزیر
 Requires at least:  5.0
-Tested up to:       5.8.2
+Tested up to:       6.1.1
 Stable tag:         6.8.0
 Requires PHP:       7.0
 License:            GPLv3 or later
