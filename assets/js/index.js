@@ -1,29 +1,30 @@
-;(_=> {
-  const font_family_fa_en = '"VazirWOL", "Poppins"'
-  const font_family_fa_code = '"VazirWOL", "MonoLisa"'
-  const colors = {
-    gray: {
-			5: '#FAFAFA',
-			10: '#F4F4F5',
-			20: '#E4E4E7',
-			30: '#D4D4D8',
-			40: '#A1A1AA',
-			50: '#71717A',
-			60: '#52525B',
-			70: '#3F3F46',
-			80: '#27272A',
-			90: '#18181B',
-    }
-  }
+;(() => {
+	const font_family_fa_en = '"VazirWOL", "Poppins"'
+	const font_family_fa_code = '"VazirWOL", "MonoLisa"'
+	const colors = {
+		gray: {
+			5: "#FAFAFA",
+			10: "#F4F4F5",
+			20: "#E4E4E7",
+			30: "#D4D4D8",
+			40: "#A1A1AA",
+			50: "#71717A",
+			60: "#52525B",
+			70: "#3F3F46",
+			80: "#27272A",
+			90: "#18181B",
+		},
+	}
 
-  // MCE
-  window.addEventListener('load', _=> {
+	// MCE
+	window.addEventListener("load", () => {
+		const wp_editor_wrap = document.querySelector(".wp-editor-wrap")
 
-    const wp_editor_wrap = document.querySelector('.wp-editor-wrap')
+		if (!wp_editor_wrap) return
 
-    if ( ! wp_editor_wrap ) return
-
-    document.head.insertAdjacentHTML('beforeend', `
+		document.head.insertAdjacentHTML(
+			"beforeend",
+			`
       <style>
         /* both content types toolbar */
         /*
@@ -45,18 +46,21 @@
 					overflow: hidden;
         }
       </style>
-    `)
+    `
+		)
 
-    const mce_ifr_stylesheet = document.querySelector('#wp_administration_style-mce-ifr-css')
-    mce_ifr_stylesheet.remove()
+		const mce_ifr_stylesheet = document.querySelector("#wp_administration_style-mce-ifr-css")
+		if (mce_ifr_stylesheet) mce_ifr_stylesheet.remove()
 
-    const main_content_ifr = document.getElementById('content_ifr')
-    if (main_content_ifr) {
-      main_content_ifr.contentWindow.document.head.insertAdjacentHTML('beforeend', `
+		const main_content_ifr = document.getElementById("content_ifr")
+		if (main_content_ifr) {
+			main_content_ifr.contentWindow.document.head.insertAdjacentHTML(
+				"beforeend",
+				`
         <link
-          rel="${mce_ifr_stylesheet.getAttribute('rel')}"
-          id="${mce_ifr_stylesheet.getAttribute('id')}"
-          href="${mce_ifr_stylesheet.getAttribute('href')}"
+          rel="${mce_ifr_stylesheet.getAttribute("rel")}"
+          id="${mce_ifr_stylesheet.getAttribute("id")}"
+          href="${mce_ifr_stylesheet.getAttribute("href")}"
         >
         
         <style>
@@ -103,11 +107,12 @@
 						color: #0284c7 !important;
 					}
         </style>
-      `)
-    }
+      `
+			)
+		}
 
-    const wp_editor_area = document.querySelector('.wp-editor-area')
-    wp_editor_area.style.setProperty('font-family', font_family_fa_code, 'important')
-    wp_editor_area.style.setProperty('direction', 'ltr', 'important')
-  })
-})();
+		const wp_editor_area = document.querySelector(".wp-editor-area")
+		wp_editor_area.style.setProperty("font-family", font_family_fa_code, "important")
+		wp_editor_area.style.setProperty("direction", "ltr", "important")
+	})
+})()
