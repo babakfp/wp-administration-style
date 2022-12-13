@@ -22,31 +22,30 @@
 
 		if (!wp_editor_wrap) return
 
-		document.head.insertAdjacentHTML(
-			"beforeend",
+		document.head.insertAdjacentHTML("beforeend",
 			`
-      <style>
-        /* both content types toolbar */
-        /*
-				.quicktags-toolbar,
-        .mce-toolbar-grp,
-        .wp-editor-tools {
-          width: 100% !important;
-          position: unset !important;
-          top: unset !important;
-        }
-				*/
+				<style>
+					/* both content types toolbar */
+					/*
+							.quicktags-toolbar,
+					.mce-toolbar-grp,
+					.wp-editor-tools {
+					width: 100% !important;
+					position: unset !important;
+					top: unset !important;
+					}
+							*/
 
-				.mce-toolbar-grp {
-					border-right: 2px solid #e5e7eb !important;
-				}
+							.mce-toolbar-grp {
+								border-right: 2px solid #e5e7eb !important;
+							}
 
-        .mce-statusbar {
-					height: 0 !important;
-					overflow: hidden;
-        }
-      </style>
-    `
+					.mce-statusbar {
+								height: 0 !important;
+								overflow: hidden;
+					}
+				</style>
+			`
 		)
 
 		const mce_ifr_stylesheet = document.querySelector("#wp_administration_style-mce-ifr-css")
@@ -54,60 +53,59 @@
 
 		const main_content_ifr = document.getElementById("content_ifr")
 		if (main_content_ifr) {
-			main_content_ifr.contentWindow.document.head.insertAdjacentHTML(
-				"beforeend",
+			main_content_ifr.contentWindow.document.head.insertAdjacentHTML("beforeend",
 				`
-        <link
-          rel="${mce_ifr_stylesheet.getAttribute("rel")}"
-          id="${mce_ifr_stylesheet.getAttribute("id")}"
-          href="${mce_ifr_stylesheet.getAttribute("href")}"
-        >
-        
-        <style>
-          body {
-            margin: 26px 16px 16px !important;
-            color: ${colors.gray[70]};
-						font-family: ${font_family_fa_en} !important;
-						background: white !important;
-          }
-          p {
-            margin-top: unset !important;
-						margin-bottom: 16px !important;
-						line-height: 28px !important;
-          }
-          h1, h2, h3, h4, h5, h6 {
-            margin-top: unset !important;
-            margin-bottom: 16px !important;
-						font-weight: 600 !important;
-          }
-					strong, b {
-						font-weight: 600 !important;
-					}
-          h1 { font-size: 38px !important; }
-          h2 { font-size: 34px !important; }
-          h3 { font-size: 30px !important; }
-          h4 { font-size: 26px !important; }
-          h5 { font-size: 22px !important; }
-          h6 { font-size: 18px !important; }
-					blockquote {
-						margin: 0 0 16px;
-						padding: 24px 32px;
-						border-radius: 6px;
-						box-shadow: 0 0.125rem 0.3rem -0.0625rem rgb(0 0 0 / 3%), 0 0.275rem 0.75rem -0.0625rem rgb(0 0 0 / 6%) !important;
-					}
-					blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
-						margin-bottom: 8px;
-						font-style: normal !important;
-					}
-					blockquote p {
-						font-weight: 400 !important;
-						font-size: 16px !important;
-					}
-					a {
-						color: #0284c7 !important;
-					}
-        </style>
-      `
+					<link
+						rel="${mce_ifr_stylesheet.getAttribute("rel")}"
+						id="${mce_ifr_stylesheet.getAttribute("id")}"
+						href="${mce_ifr_stylesheet.getAttribute("href")}"
+					>
+
+					<style>
+						body {
+							margin: 26px 16px 16px !important;
+							color: ${colors.gray[70]};
+							font-family: ${font_family_fa_en} !important;
+							background: white !important;
+						}
+						p {
+							margin-top: unset !important;
+							margin-bottom: 16px !important;
+							line-height: 28px !important;
+						}
+						h1, h2, h3, h4, h5, h6 {
+							margin-top: unset !important;
+							margin-bottom: 16px !important;
+							font-weight: 600 !important;
+						}
+						strong, b {
+							font-weight: 600 !important;
+						}
+						h1 { font-size: 38px !important; }
+						h2 { font-size: 34px !important; }
+						h3 { font-size: 30px !important; }
+						h4 { font-size: 26px !important; }
+						h5 { font-size: 22px !important; }
+						h6 { font-size: 18px !important; }
+						blockquote {
+							margin: 0 0 16px;
+							padding: 24px 32px;
+							border-radius: 6px;
+							box-shadow: 0 0.125rem 0.3rem -0.0625rem rgb(0 0 0 / 3%), 0 0.275rem 0.75rem -0.0625rem rgb(0 0 0 / 6%) !important;
+						}
+						blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6 {
+							margin-bottom: 8px;
+							font-style: normal !important;
+						}
+						blockquote p {
+							font-weight: 400 !important;
+							font-size: 16px !important;
+						}
+						a {
+							color: #0284c7 !important;
+						}
+					</style>
+				`
 			)
 		}
 
