@@ -6,7 +6,7 @@ defined( 'ABSPATH' ) or die;
  * Description:   	فارسی‌سازی, زیباسازی و بهینه‌سازی ظاهر داشبورد وردپرس. استفاده از فونت زیبای وزیر برای خوانایی بهتر متون فارسی.
  * Author:			babakfp
  * Author URI: 	  	https://babakfp.ir
- * Version: 		6.8.0
+ * Version: 		6.9.0
  * Tested up to:  	6.1.1
  * Text Domain:   	wp-administration-style
  * Tags:          	farsi, farsi font, farsi dashboard, فارسی, فونت فارسی, داشبورد فارسی, فارسی‌سازی
@@ -19,7 +19,7 @@ if ( ! class_exists( 'Wp_Administration_Style_Globals' ) )
 {
 	final class Wp_Administration_Style_Globals
 	{
-		public static $version = '6.8.0';
+		public static $version = '6.9.0';
 
 		public static function url() {
 			return plugin_dir_url( __FILE__ );

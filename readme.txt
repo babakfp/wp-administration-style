@@ -4,7 +4,7 @@ Donate link:        https://idpay.ir/babakfp
 Tags:               farsi, farsi font, farsi dashboard, فارسی, فونت فارسی, داشبورد فارسی, فارسی‌سازی
 Requires at least:  5.0
 Tested up to:       6.1.1
-Stable tag:         6.8.0
+Stable tag:         6.9.0
 Requires PHP:       7.0
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
@@ -26,6 +26,9 @@ License URI:        https://www.gnu.org/licenses/gpl-3.0.html
 
 
 == Changelog ==
+
+= 6.9.0 =
+* حل مشکل گذارش داده شده در این تیکت: https://wordpress.org/support/topic/problem-padding-bottom-in-nav-tab/
 
 = 6.8.0 =
 * بهینه‌سازی کدها
