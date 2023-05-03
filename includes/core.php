@@ -1,4 +1,6 @@
 <?php
+namespace WP_ADMINISTRATION_STYLE;
+
 defined( 'ABSPATH' ) or die;
 
 if ( ! class_exists( 'Wp_Administration_Style' ) )
@@ -11,12 +13,19 @@ if ( ! class_exists( 'Wp_Administration_Style' ) )
 
 		function sutup_plugin() {
 			require_once Wp_Administration_Style_Globals::dir() . 'includes/is-gutenberg-active.php';
-			require_once Wp_Administration_Style_Globals::dir() . 'includes/elementor-editor.php';
 
 			add_action( 'admin_head', [ $this, 'font_face' ] );
-			add_action( 'elementor/editor/wp_head', [ $this, 'font_face' ] );
+
 			add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_styles' ] );
 			add_action( 'login_enqueue_scripts', [ $this, 'my_login_stylesheet' ] );
+
+			add_action( 'elementor/editor/wp_head', [ $this, 'font_face' ] );
+			add_action( 'elementor/editor/after_enqueue_styles', function() {
+				wp_enqueue_style ( 'wp-administration-style-editor', Wp_Administration_Style_Globals::url() . 'assets/css/elementor-editor.css', [], Wp_Administration_Style_Globals::$version );
+			} );
+			add_action( 'elementor/preview/enqueue_styles', function() {
+				wp_enqueue_style ( 'wp-administration-style-preview', Wp_Administration_Style_Globals::url() . 'assets/css/elementor-preview.css', [], Wp_Administration_Style_Globals::$version );
+			} );
 		}
 
 		function enqueue_styles() {
@@ -24,7 +33,7 @@ if ( ! class_exists( 'Wp_Administration_Style' ) )
 			wp_enqueue_style( 'wp-administration-style-base', Wp_Administration_Style_Globals::url() . 'assets/css/base.css', [], Wp_Administration_Style_Globals::$version );
 			wp_enqueue_style( 'wp-administration-style-uicons', Wp_Administration_Style_Globals::url() . 'assets/fonts/wp-administration-style-icons/style.css', [], Wp_Administration_Style_Globals::$version );
 
-			if ( new Wp_Administration_Style_Is_Gutenberg_Active() ) {
+			if ( is_gutenberg_active() ) {
 				wp_enqueue_style( 'wp-administration-style-gutenberg', Wp_Administration_Style_Globals::url() . 'assets/css/gutenberg.css', [], Wp_Administration_Style_Globals::$version );
 			}
 

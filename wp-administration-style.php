@@ -1,4 +1,6 @@
 <?php
+namespace WP_ADMINISTRATION_STYLE;
+
 defined( 'ABSPATH' ) or die;
 
 /**
