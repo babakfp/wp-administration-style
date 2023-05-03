@@ -37,3 +37,7 @@ input#elementor-template-library-save-template-name {
   font-family: "MonoLisa", "Vazirmatn" !important;
   line-height: 24px;
 }
+
+#elementor-toast {
+  backdrop-filter: blur(4px);
+}
