@@ -1,23 +1,6 @@
 {
 	"scripts": {
-		"base": "sass assets/sass/_main-files/base.sass:assets/css/base.css --watch --style compressed --no-source-map",
-		"gutenberg": "sass assets/sass/_main-files/gutenberg.sass:assets/css/gutenberg.css --watch --style compressed --no-source-map",
-		"mce": "sass assets/sass/_main-files/mce.sass:assets/css/mce.css --watch --style compressed --no-source-map",
-		"mce-ifr": "sass assets/sass/_main-files/mce-ifr.sass:assets/css/mce-ifr.css --watch --style compressed --no-source-map",
-		"elementor": "sass assets/sass/_main-files/elementor.sass:assets/css/elementor.css --watch --style compressed --no-source-map",
-		"elementor-editor": "sass assets/sass/_main-files/elementor-editor.sass:assets/css/elementor-editor.css --watch --style compressed --no-source-map",
-		"woocommerce": "sass assets/sass/_main-files/woocommerce.sass:assets/css/woocommerce.css --watch --style compressed --no-source-map",
-		"signin": "sass assets/sass/_main-files/signin.sass:assets/css/signin.css --watch --style compressed --no-source-map",
-
-		"base:once": "sass assets/sass/_main-files/base.sass:assets/css/base.css --style compressed --no-source-map",
-		"gutenberg:once": "sass assets/sass/_main-files/gutenberg.sass:assets/css/gutenberg.css --style compressed --no-source-map",
-		"mce:once": "sass assets/sass/_main-files/mce.sass:assets/css/mce.css --style compressed --no-source-map",
-		"mce-ifr:once": "sass assets/sass/_main-files/mce-ifr.sass:assets/css/mce-ifr.css --style compressed --no-source-map",
-		"elementor:once": "sass assets/sass/_main-files/elementor.sass:assets/css/elementor.css --style compressed --no-source-map",
-		"elementor-editor:once": "sass assets/sass/_main-files/elementor-editor.sass:assets/css/elementor-editor.css --style compressed --no-source-map",
-		"woocommerce:once": "sass assets/sass/_main-files/woocommerce.sass:assets/css/woocommerce.css --style compressed --no-source-map",
-		"signin:once": "sass assets/sass/_main-files/signin.sass:assets/css/signin.css --style compressed --no-source-map",
-
-		"generate-css": "npm-run-all base:once gutenberg:once mce:once mce-ifr:once elementor:once woocommerce:once signin:once elementor-editor:once"
+        "dev": "sass assets/sass/_main-files/base.sass:assets/css/base.css assets/sass/_main-files/gutenberg.sass:assets/css/gutenberg.css assets/sass/_main-files/mce.sass:assets/css/mce.css assets/sass/_main-files/mce-ifr.sass:assets/css/mce-ifr.css assets/sass/_main-files/elementor.sass:assets/css/elementor.css assets/sass/_main-files/elementor-editor.sass:assets/css/elementor-editor.css assets/sass/_main-files/woocommerce.sass:assets/css/woocommerce.css assets/sass/_main-files/signin.sass:assets/css/signin.css --watch --no-source-map",
+        "build": "sass assets/sass/_main-files/base.sass:assets/css/base.css assets/sass/_main-files/gutenberg.sass:assets/css/gutenberg.css assets/sass/_main-files/mce.sass:assets/css/mce.css assets/sass/_main-files/mce-ifr.sass:assets/css/mce-ifr.css assets/sass/_main-files/elementor.sass:assets/css/elementor.css assets/sass/_main-files/elementor-editor.sass:assets/css/elementor-editor.css assets/sass/_main-files/woocommerce.sass:assets/css/woocommerce.css assets/sass/_main-files/signin.sass:assets/css/signin.css --no-source-map --style=compressed"
 	}
 }
