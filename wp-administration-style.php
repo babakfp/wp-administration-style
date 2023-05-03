@@ -2,17 +2,17 @@
 defined( 'ABSPATH' ) or die;
 
 /**
- * Plugin Name:                       WP Administration Style
- * Version:                           6.11.0
- * Description:                       Enhances WordPress admin panel design and user experience.
- * Author:                            babakfp
- * Author URI:                        https://babakfp.ir
- * Tested up to:                      6.1.1
- * License:                           GPLv3 or later
- * License URI:                       https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain:                       wp-administration-style
- * Domain Path:                       /languages
- * Tags:                              farsi, farsi font, farsi dashboard, فارسی, فونت فارسی, داشبورد فارسی, فارسی‌سازی
+ * Plugin Name:           WP Administration Style
+ * Version:               6.11.0
+ * Description:           Enhances WordPress admin panel design and user experience.
+ * Author:                babakfp
+ * Author URI:            https://babakfp.ir
+ * Tested up to:          6.1.1
+ * License:               GPLv3 or later
+ * License URI:           https://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain:           wp-administration-style
+ * Domain Path:           /languages
+ * Tags:                  farsi, farsi font, farsi dashboard, فارسی, فونت فارسی, داشبورد فارسی, فارسی‌سازی
  */
 
 if ( ! class_exists( 'Wp_Administration_Style_Globals' ) )
