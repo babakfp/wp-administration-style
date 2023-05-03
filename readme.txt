@@ -1,13 +1,13 @@
 ﻿=== WP Administration Style ===
+Stable tag:         6.11.0
+Tested up to:       6.1.1
+Requires at least:  5.0
+Requires PHP:       7.0
 Contributors:       Pixer
 Donate link:        https://idpay.ir/babakfp
-Tags:               farsi, farsi font, farsi dashboard, فارسی, فونت فارسی, داشبورد فارسی, فارسی‌سازی
-Requires at least:  5.0
-Tested up to:       6.1.1
-Stable tag:         6.11.0
-Requires PHP:       7.0
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
+Tags:               farsi, farsi font, farsi dashboard, فارسی, فونت فارسی, داشبورد فارسی, فارسی‌سازی
 
 فارسی‌سازی, زیباسازی و بهینه‌سازی ظاهر داشبورد وردپرس. استفاده از فونت زیبای وزیر برای خوانایی بهتر متون فارسی.
 
