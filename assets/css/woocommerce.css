@@ -226,6 +226,11 @@ body.post-type-shop_order #order_data .order_data_column .form-field .date-picke
   direction: ltr;
 }
 
+.woocommerce-BlankState {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .woocommerce-marketing-coupons {
   display: none;
 }
