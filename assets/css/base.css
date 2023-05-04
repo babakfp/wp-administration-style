@@ -301,24 +301,6 @@ button {
   box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.4) print_important(true);
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: #3F3F46;
-}
-::-webkit-scrollbar-thumb {
-  height: 3rem;
-  max-height: 40%;
-  background: #71717A;
-  border-radius: 99px;
-  background-clip: padding-box;
-  border: 2px solid transparent;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #D4D4D8;
-}
-
 ::selection {
   background-color: #D4D4D8;
   color: #3F3F46;
@@ -354,7 +336,7 @@ body,
 body *:not(i, [class*=-icon], [class*=dashicons]),
 body:not(*)::before,
 body:not(*)::after {
-  font-family: "Vazirmatn", "dashicons", "MonoLisa" !important;
+  font-family: "Vazirmatn", "dashicons" !important;
 }
 
 .title-count {

@@ -132,7 +132,7 @@ a.preview, input#publish, input#save-post {
 }
 
 body {
-  font-family: "Vazirmatn", "dashicons", "MonoLisa" !important;
+  font-family: "Vazirmatn", "dashicons" !important;
   color: #52525B !important;
   user-select: none;
   height: 100vh;

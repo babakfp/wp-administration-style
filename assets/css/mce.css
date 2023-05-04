@@ -242,7 +242,7 @@
   background: white !important;
   font-weight: 400 !important;
   transition: 200ms;
-  font-family: "MonoLisa", "Vazirmatn" !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Vazirmatn" !important;
 }
 .wp-editor-wrap input.ed_button.button.button-small:hover {
   color: #27272A !important;
@@ -255,7 +255,7 @@
 }
 
 .wp-editor-area {
-  font-family: "MonoLisa", "Vazirmatn" !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Vazirmatn" !important;
 }
 
 #wp-post_content-editor-tools {
@@ -458,12 +458,6 @@
 }
 #qt_post_content_toolbar .button:focus {
   background: #c8c8c8 !important;
-}
-#qt_post_content_toolbar::-webkit-scrollbar {
-  height: 2px;
-}
-#qt_post_content_toolbar::-webkit-scrollbar-thumb {
-  background: #52525B;
 }
 
 .mce-text,

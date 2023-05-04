@@ -23,7 +23,7 @@ input, select, textarea, button {
 }
 
 .ace_editor {
-  font-family: "MonoLisa", "Vazirmatn" !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Vazirmatn" !important;
   line-height: 24px;
 }
 
