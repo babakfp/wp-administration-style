@@ -135,6 +135,11 @@ body {
   font-family: "Vazirmatn", "dashicons", "MonoLisa" !important;
   color: #52525B !important;
   user-select: none;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  align-content: center;
+  align-items: center;
 }
 
 .password-input {
