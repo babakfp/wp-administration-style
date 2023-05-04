@@ -1,6 +1,6 @@
 ﻿=== WP Administration Style ===
-Stable tag:                 6.11.0
-Tested up to:               6.1.1
+Stable tag:                 6.12.0
+Tested up to:               6.2.0
 Requires at least:          5.0
 Requires PHP:               7.0
 Contributors:               Pixer
