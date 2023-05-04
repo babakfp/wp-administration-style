@@ -5,7 +5,7 @@ defined( 'ABSPATH' ) or die;
 
 /**
  * Plugin Name:                       WP Administration Style
- * Version:                           6.14.0
+ * Version:                           6.15.0
  * Description:                       Enhances WordPress admin panel design and user experience.
  * Author:                            babakfp
  * Author URI:                        https://babakfp.ir
@@ -22,7 +22,7 @@ if ( ! class_exists( 'Wp_Administration_Style_Globals' ) )
 {
 	final class Wp_Administration_Style_Globals
 	{
-		public static $version = '6.14.0';
+		public static $version = '6.15.0';
 
 		public static function url() {
 			return plugin_dir_url( __FILE__ );
