@@ -1,5 +1,5 @@
 ﻿=== WP Administration Style ===
-Stable tag:                 6.11.0
+Stable tag:                 6.14.0
 Tested up to:               6.2.0
 Requires at least:          5.0
 Requires PHP:               7.0
