@@ -1406,7 +1406,7 @@ body .alternate, body .striped > tbody > :nth-child(odd), body ul.striped > :nth
 #poststuff #category-all,
 #poststuff #category-pop {
   border: unset;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 #poststuff #categorychecklist,
 #poststuff #categorychecklist-pop {
