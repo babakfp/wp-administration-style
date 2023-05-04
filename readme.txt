@@ -28,8 +28,8 @@ Tags:                       farsi, farsi font, farsi dashboard, فارسی, فو
 == Changelog ==
 
 = NEXT =
-* Better performance.
-* Improved UI and UX a little bit.
+*  کارکرد و عملکرد بهتر.
+* ظاهر و تجربه کاربری کمی بهبود یافته است.
 
 = 6.11.0 =
 * حذف رنگ پس‌زمینه صفحه ورود ادمین به دلیل اختلال با سایر افزونه‌ها.
