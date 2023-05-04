@@ -499,7 +499,7 @@ body.admin-color-fresh #wpadminbar, body.admin-color-fresh #adminmenuback, body.
   background: #27272A;
 }
 body.admin-color-fresh #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
-  border-left-color: #71717A;
+  border-left-color: rgba(255, 255, 255, 0.05);
 }
 body.admin-color-fresh #adminmenu a,
 body.admin-color-fresh #wpadminbar .ab-empty-item, body.admin-color-fresh #wpadminbar a.ab-item, body.admin-color-fresh #wpadminbar > #wp-toolbar span.ab-label, body.admin-color-fresh #wpadminbar > #wp-toolbar span.noticon {
