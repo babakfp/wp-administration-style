@@ -1,6 +1,6 @@
 ;(() => {
 	const font_family_fa_en = '"Vazirmatn"'
-	const font_family_fa_code = '"MonoLisa", "Vazirmatn"'
+	const font_family_fa_code = 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Vazirmatn"'
 	const colors = {
 		gray: {
 			5: "#FAFAFA",
